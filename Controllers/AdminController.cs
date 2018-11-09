@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Coun.Controllers
 {
-    // [Authorize(Roles = "Administrator")]
+     [Authorize(Roles = "Administrator")]
     public class AdminController : Controller
     {
         private readonly DataContext _db;

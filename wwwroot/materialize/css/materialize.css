@@ -2100,11 +2100,11 @@
 }
 
 .grey.darken-3 {
-  background-color: #424242 !important;
+  background-color: #fff !important;
 }
 
 .grey-text.text-darken-3 {
-  color: #424242 !important;
+  color: #f0dede !important;
 }
 
 .grey.darken-4 {
@@ -2943,10 +2943,24 @@ ul.staggered-list li {
   }
 }
 
+.footer {
+left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: lightgrey;
+    font-family: Faruma;
+}
+
 .page-footer {
-  padding-top: 20px;
+  padding-top: 2px;
   color: #fff;
-  background-color: #ee6e73;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  height: 50px;
+  width: 100px;
+  background-color: #a59292;
 }
 
 .page-footer .footer-copyright {
@@ -2964,7 +2978,7 @@ ul.staggered-list li {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 0px;
+  padding: 5px 0px;
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(51, 51, 51, 0.08);
 }
@@ -3431,7 +3445,13 @@ table span.badge {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 90%;
+  width: 100%;
+}
+
+.contain {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 601px) {
@@ -4292,7 +4312,7 @@ nav.nav-extended .nav-content {
 }
 
 nav a {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 nav i,
@@ -5542,6 +5562,23 @@ button.btn-floating {
   display: block;
 }
 
+ul.dropdown-content > li {
+  position:relative;
+}
+li ul { display: none; }
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li { float: none; }
+
+.dropdown-content li ul li { border-top: 0; }
+ul ul {
+  left: 100%;
+  top: 0;
+}
+
 .dropdown-content {
   background-color: #fff;
   margin: 0;
@@ -5557,6 +5594,7 @@ button.btn-floating {
           transform-origin: 0 0;
 }
 
+
 .dropdown-content:focus {
   outline: 0;
 }
@@ -5569,6 +5607,13 @@ button.btn-floating {
   line-height: 1.5rem;
   width: 100%;
   text-align: left;
+}
+
+.dropdown-content li:hover .nested
+{
+  display: block;
+  position:absolute;
+  top: 0;
 }
 
 .dropdown-content li:hover, .dropdown-content li.active {
@@ -7552,6 +7597,7 @@ input[type=range]::-ms-thumb {
 }
 
 .sidenav.right-aligned {
+  background-color: #fff;
   right: 0;
   -webkit-transform: translateX(105%);
           transform: translateX(105%);
@@ -7570,11 +7616,11 @@ input[type=range]::-ms-thumb {
 }
 
 .sidenav li.active {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(226, 221, 221, 0.062);
 }
 
 .sidenav li > a {
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(168, 167, 167, 0.87);
   display: block;
   font-size: 14px;
   font-weight: 500;
@@ -7584,7 +7630,7 @@ input[type=range]::-ms-thumb {
 }
 
 .sidenav li > a:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(177, 173, 173, 0.05);
 }
 
 .sidenav li > a.btn, .sidenav li > a.btn-large, .sidenav li > a.btn-small, .sidenav li > a.btn-large, .sidenav li > a.btn-flat, .sidenav li > a.btn-floating {
@@ -8486,10 +8532,19 @@ input[type=range]::-ms-thumb {
   visibility: visible;
   -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
           animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-  -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
 }
 
 .tap-target {
@@ -8542,10 +8597,19 @@ input[type=range]::-ms-thumb {
 
 .tap-target-wave::after {
   visibility: hidden;
-  -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s;
-  transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s,
+ -webkit-transform .3s;
   z-index: -1;
 }
 
