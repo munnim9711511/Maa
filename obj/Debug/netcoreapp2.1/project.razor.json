@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "ProjectFilePath": "c:\\Users\\Admin\\Desktop\\count1\\Coun.csproj",
-=======
-  "ProjectFilePath": "c:\\Users\\Munnim\\Desktop\\count1\\Coun.csproj",
->>>>>>> ace0e7f6333de8d1bd89fbe826a1ce18da4ed8b7
   "TargetFramework": "netcoreapp2.1",
   "TagHelpers": [],
   "Configuration": {
