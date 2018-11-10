@@ -30,8 +30,9 @@ namespace Coun.Controllers {
         }
 
         [HttpGet]
-        public IActionResult Project () {
-            return View ();
+        public IActionResult Project (string id) {
+            ViewBag.project = _db.LinkModels.Where(x=>x.Catogary == id).ToArray();
+            return View ( ViewBag.project);
         }
 
         [HttpGet]

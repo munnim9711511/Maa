@@ -260,3 +260,4 @@ C:\New folder\count1\obj\Debug\netcoreapp2.1\Coun.dll
 C:\New folder\count1\obj\Debug\netcoreapp2.1\Coun.pdb
 C:\New folder\count1\obj\Debug\netcoreapp2.1\Coun.csproj.CopyComplete
 C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Project.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Project.g.cshtml.cs
