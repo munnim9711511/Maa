@@ -10,11 +10,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace Coun.Controllers {
-    // [Authorize(Roles = "Administrator")]
+    [Authorize]
     public class AdminController : Controller {
         private const string ControllerName = "Admin";
         private readonly DataContext _db;
@@ -35,6 +36,11 @@ namespace Coun.Controllers {
             return View ();
         }
 
+        [HttpGet]
+        public IActionResult Users(){
+            return View();
+        }
+
         [HttpPost]
         public IActionResult Gallery (GalleryModel galleryM, IFormFile gpic) {
             if (gpic != null) {
@@ -49,7 +55,9 @@ namespace Coun.Controllers {
 
             return View ("Gallery");
         }
+    
 
+        
         [HttpPost]
         public IActionResult News (NewsModel NewsM, IFormFile NewsPic) {
             if (NewsPic != null) {
@@ -141,18 +149,19 @@ namespace Coun.Controllers {
         }
 
         [HttpPost]
-        public IActionResult UpdateNews (NewsModel news) {
-            var entity = _db.NewsModels.FirstOrDefault (x => x.Id == news.Id);
-            if (entity != null) {
-                entity.Title = news.Title;
-                entity.Text = news.Text;
-                entity.Date = DateTime.Now.ToString ();
-                _db.NewsModels.Update (entity);
+        public IActionResult UpdateNews (NewsModel newsM, IFormFile NewsPic) {
+            if (NewsPic != null) {
+                var fileName = Path.Combine (he.WebRootPath + "/newsImage", Path.GetFileName (NewsPic.FileName));
+                NewsPic.CopyTo (new FileStream (fileName, FileMode.Create));
+                newsM.ImgUrl = Path.GetFileName (NewsPic.FileName);
+                newsM.Date = DateTime.Now.ToString ();
+                _db.NewsModels.Update (newsM);
                 _db.SaveChanges ();
+
             }
-          
-            // return RedirectToAction("UpdateNews", "admin");
-            return Content("test");
+
+            return RedirectToAction ("UpdateNews", "admin");
+
         }
 
         [HttpGet]

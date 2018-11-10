@@ -1,9 +1,32 @@
+
+
 @{
     Layout="~/Views/Shared/_AdminLayout.cshtml";
 }
 
 
 <h5>
-    Manage users
+    Create users
 </h5>
 <hr>
+<form action="@Url.Action("Register","Account")"  method="POST">
+    <div class="row">
+        <div class="col m6 input-field">
+            <input type="text" name="UserName" value="">
+            <label for="">user name</label>
+        </div>
+     
+        
+    </div>
+    <div class="row">
+             <div class="col m6 input-field">
+            <input type="text" name="Password" value="">
+            <label for="">password</label>
+        </div>
+       
+    </div>
+ 
+    <div class="row">
+        <input type="submit" value="upload" class="btn">
+    </div>
+</form>
