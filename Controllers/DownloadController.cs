@@ -25,10 +25,12 @@ namespace Coun.Controllers {
             return View (ViewBag);
         }
         public IActionResult Law () {
-            return View ();
+            ViewBag.rules = _db.LinkModels.Where(x=>x.Catogary == "runningrules").ToArray();
+            return View (ViewBag);
         }
         public IActionResult Ausule () {
-            return View ();
+            ViewBag.ausulu = _db.LinkModels.Where(x=>x.Catogary == "proceduer").ToArray();
+            return View (ViewBag);
         }
         public IActionResult Report () {
             return View ();

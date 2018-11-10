@@ -35,6 +35,11 @@ namespace Coun.Controllers {
 
             return View (ViewBag);
         }
+        [HttpGet]
+        public IActionResult Responsibility(int id){
+            ViewBag.responsibility = _db.LinkModels.Where(x=>x.Catogary == "responsibility").ToArray();
+            return View(ViewBag);
+        }
 
         [HttpGet]
 
@@ -42,6 +47,14 @@ namespace Coun.Controllers {
             ViewData["Message"] = "Your application description page.";
 
             return View ();
+        }
+
+
+        public IActionResult EngCouncil(){
+            return View();
+        }
+         public IActionResult EngRules(){
+            return View();
         }
 
         public IActionResult Contact () {
