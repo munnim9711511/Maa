@@ -64,6 +64,7 @@ namespace Coun.Controllers {
             return RedirectToAction ("Login", "Account");
         }
 
+      
         [HttpPost]
         public async Task<IActionResult> Login (UserModel user) {
             var result = await _siginManager.PasswordSignInAsync (user.UserName, user.Password, user.RememberMe, false);

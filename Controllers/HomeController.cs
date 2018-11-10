@@ -15,7 +15,7 @@ namespace Coun.Controllers {
             this._db = _db;
         }
         public IActionResult Index () {
-            ViewBag.gallery = _db.GalleryModels.Where(x=>x.Text == "photo").ToArray ().Take (6);
+            ViewBag.gallery = _db.GalleryModels.Where (x => x.Text == "photo").ToArray ().Take (6);
             ViewBag.anouncements = _db.anouncementsModels.ToArray ().Take (6);
             ViewBag.news = _db.NewsModels.ToArray<NewsModel> ().Take<NewsModel> (6);
             ViewBag.slider = _db.SliderModels.ToArray ().Take (4);
@@ -30,15 +30,21 @@ namespace Coun.Controllers {
         }
 
         [HttpGet]
+        public IActionResult Project () {
+            return View ();
+        }
+
+        [HttpGet]
         public IActionResult News () {
             ViewBag.news = _db.NewsModels.ToArray ().OrderByDescending (x => x.Id);
 
             return View (ViewBag);
         }
+
         [HttpGet]
-        public IActionResult Responsibility(int id){
-            ViewBag.responsibility = _db.LinkModels.Where(x=>x.Catogary == "responsibility").ToArray();
-            return View(ViewBag);
+        public IActionResult Responsibility (int id) {
+            ViewBag.responsibility = _db.LinkModels.Where (x => x.Catogary == "responsibility").ToArray ();
+            return View (ViewBag);
         }
 
         [HttpGet]
@@ -49,12 +55,11 @@ namespace Coun.Controllers {
             return View ();
         }
 
-
-        public IActionResult EngCouncil(){
-            return View();
+        public IActionResult EngCouncil () {
+            return View ();
         }
-         public IActionResult EngRules(){
-            return View();
+        public IActionResult EngRules () {
+            return View ();
         }
 
         public IActionResult Contact () {
@@ -64,13 +69,10 @@ namespace Coun.Controllers {
         }
 
         [HttpGet]
-           public IActionResult MaamigiliContact () {
-            
+        public IActionResult MaamigiliContact () {
 
             return View ();
         }
-
-
 
         [HttpGet]
         public IActionResult Counciller (string id) {

@@ -55,6 +55,8 @@ namespace Coun.Controllers {
 
             return View ("Gallery");
         }
+    
+
         
         [HttpPost]
         public IActionResult News (NewsModel NewsM, IFormFile NewsPic) {

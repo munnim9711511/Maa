@@ -24,6 +24,8 @@
 
     <script src="~/js/site.js"></script>
 
+    
+   
 </head>
 <body >
     <br>
@@ -110,8 +112,8 @@
                       <i class="material-icons left right-align">arrow_drop_down</i>  ޑައުންލޯޑް
                   </a>
               </li>
-              <li><a href="badges.html" class="dh right-align">  ލިންކުތައް</a></li>
-              <li><a href="@Url.Action("MaamigiliContact","Home")" class="dh right-align">  ގުޅުއްވާ</a></li>
+              <!-- <li><a href="badges.html" class="dh right-align">  ލިންކުތައް</a></li> -->
+              <li><a href="badges.html" class="dh right-align">  ގުޅުއްވާ</a></li>
 
               <li>
                   <a class="dropdown-trigger dh right-align" href="#!" data-target="dropdown13">
@@ -120,14 +122,8 @@
               </li>
 
           </ul>
-   <ul id="dropdown12" class="dropdown-content" style="font-size: 9%;">
-          <li><a href="@Url.Action("EngCouncil","Home")" class="dh left-align" >  Council</a></li>
-          <li><a href="@Url.Action("EngRules","Home")" class="dh left-align">  Rules & Regulations</a></li>
-          <li><a href="#!" class="dh left-align">    Meetings</a></li>
-          <li><a href="#!" class="dh left-align">    Responsibilities</a></li>
-          <li><a href="#!" class="dh left-align">    Services</a></li>
-              </ul>
 
+   
           <ul id="dropdown6" class="dropdown-content">
           <li><a href="" class="dh right-align" >  ފޯމް</a></li>
           <li><a href="#!" class="dh right-align">  ޤަވައިދު</a></li>
@@ -158,13 +154,21 @@
                     <ul id="dropdown10" class="dropdown-content">
   <li><a href="@Url.Action("Counciller","Home",new{id="counciler"})" class="dh right-align" >ކައުންސިލަރ</a></li>
   <li><a href="@Url.Action("RunningRules","Home",new{id ="runningrules"})" class="dh right-align">ހިންގާ ޤަވައިދު</a></li>
-
-  <li><a href="@Url.Action("meetingSummery","Home",new{id="meetingSummery"})" class="dh right-align"> ޖަލްސާ</a></li>
-  <li><a href="@Url.Action("Responsibility","Home")" class="dh right-align"> މަސްއޫލިއްޔަތާއި</a></li>
+  
+  <li><a class="dropdown-trigger dh right-align" href="#!" data-target="">
+   <i class="material-icons left right-align">arrow_drop_down</i> ޖަލްސާ</a>
+   <ul class="nested">
+        <li><a href="" class="dh right-align">ނޫސްބަޔާން</a></li>
+    <li><a href="" class="dh right-align">ޔައުމިއްޔާ</a></li>
+    <li><a href="" class="dh right-align">ނިއްމުން</a></li>
+    <li><a href="" class="dh right-align">އެޖެންޑާ</a></li>
+      </ul>
+      </li>
+  <li><a href="#!" class="dh right-align"> މަސްއޫލިއްޔަތާއި</a></li>
   <li><a href="#!" class="dh right-align"> ހިދުމަތްތައް</a></li>
   <li><a href="#!" class="dh right-align"> އިދާރީ އޮނިގަނޑު</a></li>
   <li><a href="#!" class="dh right-align"> ވިސަން މިސަން </a></li>
-  <li><a href="#!" class="dh right-align"> ޕުލޭންތަކާއި، މަޝްރޫއުތައް </a></li>
+  <li><a href="@Url.Action("Project","Admin")" class="dh right-align"> ޕުލޭންތަކާއި، މަޝްރޫއުތައް </a></li>
       </ul>
      <ul id="dropdown5" class="dropdown-content">
   <li><a href="@Url.Action("Form","Download")" class="dh right-align" >  ފޯމް</a></li>
@@ -187,13 +191,21 @@
     <ul id="dropdown1" class="dropdown-content">
   <li><a href="@Url.Action("Counciller","Home",new{id="counciler"})" class="dh right-align" >ކައުންސިލަރ</a></li>
   <li><a href="@Url.Action("RunningRules","Home",new{id ="runningrules"})" class="dh right-align">ހިންގާ ޤަވައިދު</a></li>
-
-  <li><a href="@Url.Action("meetingSummery","Home",new{id="meetingSummery"})" class="dh right-align"> ޖަލްސާ</a></li>
-  <li><a href="@Url.Action("Responsibility","Home")" class="dh right-align"> މަސްއޫލިއްޔަތާއި</a></li>
+  
+  <li><a class="dropdown-trigger dh right-align" href="#!" data-target="">
+   <i class="material-icons left right-align">arrow_drop_down</i> ޖަލްސާ</a>
+   <ul class="nested">
+        <li><a href="" class="dh right-align">ނޫސްބަޔާން</a></li>
+    <li><a href="" class="dh right-align">ޔައުމިއްޔާ</a></li>
+    <li><a href="" class="dh right-align">ނިއްމުން</a></li>
+    <li><a href="" class="dh right-align">އެޖެންޑާ</a></li>
+      </ul>
+      </li>
+  <li><a href="#!" class="dh right-align"> މަސްއޫލިއްޔަތާއި</a></li>
   <li><a href="#!" class="dh right-align"> ހިދުމަތްތައް</a></li>
   <li><a href="#!" class="dh right-align"> އިދާރީ އޮނިގަނޑު</a></li>
   <li><a href="#!" class="dh right-align"> ވިސަން މިސަން </a></li>
-  <li><a href="#!" class="dh right-align"> ޕުލޭންތަކާއި، މަޝްރޫއުތައް </a></li>
+  <li><a href="@Url.Action("Project","Admin")" class="dh right-align"> ޕުލޭންތަކާއި، މަޝްރޫއުތައް </a></li>
 
 
 
