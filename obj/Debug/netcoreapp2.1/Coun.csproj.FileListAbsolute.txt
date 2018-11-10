@@ -330,3 +330,8 @@ C:\Users\Munnim\Desktop\count1\obj\Debug\netcoreapp2.1\Coun.pdb
 C:\Users\Munnim\Desktop\count1\obj\Debug\netcoreapp2.1\Coun.csproj.CopyComplete
 C:\Users\Munnim\Desktop\count1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\UpdateNew.g.cshtml.cs
 >>>>>>> ace0e7f6333de8d1bd89fbe826a1ce18da4ed8b7
+C:\Users\Admin\desktop\count1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\UpdateNew.g.cshtml.cs
+C:\Users\Admin\desktop\count1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\UpdateNews.g.cshtml.cs
+C:\Users\Admin\desktop\count1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\VideoGallery.g.cshtml.cs
+C:\Users\Admin\desktop\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\MaamigiliContact.g.cshtml.cs
+C:\Users\Admin\desktop\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\VideoGallery.g.cshtml.cs

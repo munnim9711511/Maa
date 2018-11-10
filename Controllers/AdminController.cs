@@ -13,18 +13,10 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-<<<<<<< HEAD
-namespace Coun.Controllers
-{
-     [Authorize(Roles = "Administrator")]
-    public class AdminController : Controller
-    {
-=======
 namespace Coun.Controllers {
     // [Authorize(Roles = "Administrator")]
     public class AdminController : Controller {
         private const string ControllerName = "Admin";
->>>>>>> ace0e7f6333de8d1bd89fbe826a1ce18da4ed8b7
         private readonly DataContext _db;
         private readonly IHostingEnvironment he;
         public AdminController (DataContext _db, IHostingEnvironment he) {
