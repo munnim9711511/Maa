@@ -101,6 +101,16 @@ namespace Coun.Controllers {
         public IActionResult Privacy () {
             return View ();
         }
+        public IActionResult Target(){
+            ViewBag.mission = _db.LinkModels.Where(x=>x.Catogary == "mission").ToArray();
+            ViewBag.Vission = _db.LinkModels.Where(x=>x.Catogary == "vission").ToArray();
+            return View(ViewBag);
+        }
+
+        public IActionResult Services(){
+            ViewBag.services = _db.LinkModels.Where(x=>x.Catogary =="services").ToArray();
+            return View(ViewBag);
+        }
 
         [ResponseCache (Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error () {
