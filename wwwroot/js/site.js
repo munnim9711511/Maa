@@ -5,7 +5,7 @@
 
 
 $(() => {
-
+    $('.collapsible').collapsible();
     $('.slider').slider({
         height: 500
     });
@@ -16,4 +16,5 @@ $(() => {
 
     $('select').formSelect();
     $('.materialboxed').materialbox();
+
 });

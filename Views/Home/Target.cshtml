@@ -1,0 +1,23 @@
+<div class="container">
+    <h5 class=" dh right-align">މިސަން އަދި ވިޝަން</h5>
+    <hr>
+<div>
+
+@foreach (var item in ViewBag.mission)
+{
+    <h5 class="dh right-align" style="direction: rtl;">@item.Title</h5>
+    <p class="right-align">
+        @item.Text
+    </p>
+}
+
+
+@foreach (var item in  ViewBag.Vission)
+{
+    <h5 class="dh right-align" style="direction: rtl;">@item.Title</h5>
+    <p class="dh right-align">
+        @item.Text
+    </p>
+}
+</div>
+</div>

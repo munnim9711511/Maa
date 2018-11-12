@@ -64,7 +64,11 @@ using Coun.Models;
             WriteLiteral("\r\n\r\n<h5>\r\n    Create users\r\n</h5>\r\n<hr>\r\n");
             EndContext();
             BeginContext(102, 591, false);
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a24fb815d673445687885136ea793366", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "73827f4ce9d74429a6af46c7f6945121", async() => {
+>>>>>>> ad0bd2a220640528965a7fa32c6f4415ec83b570
                 BeginContext(166, 520, true);
                 WriteLiteral(@"
     <div class=""row"">

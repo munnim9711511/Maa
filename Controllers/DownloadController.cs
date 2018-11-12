@@ -33,10 +33,12 @@ namespace Coun.Controllers {
             return View (ViewBag);
         }
         public IActionResult Report () {
-            return View ();
+             ViewBag.report = _db.LinkModels.Where(x=>x.Catogary == "report").ToArray();
+            return View (ViewBag);
         }
         public IActionResult Documents () {
-            return View ();
+             ViewBag.doc = _db.LinkModels.Where(x=>x.Catogary == "doc").ToArray();
+            return View (ViewBag);
         }
 
     }

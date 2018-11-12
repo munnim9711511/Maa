@@ -261,6 +261,7 @@ C:\New folder\count1\obj\Debug\netcoreapp2.1\Coun.pdb
 C:\New folder\count1\obj\Debug\netcoreapp2.1\Coun.csproj.CopyComplete
 C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Project.g.cshtml.cs
 C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Project.g.cshtml.cs
+<<<<<<< HEAD
 D:\desk\count1\bin\Debug\netcoreapp2.1\Coun.deps.json
 D:\desk\count1\bin\Debug\netcoreapp2.1\Coun.runtimeconfig.json
 D:\desk\count1\bin\Debug\netcoreapp2.1\Coun.runtimeconfig.dev.json
@@ -332,3 +333,20 @@ D:\desk\count1\obj\Debug\netcoreapp2.1\Coun.Views.pdb
 D:\desk\count1\obj\Debug\netcoreapp2.1\Coun.dll
 D:\desk\count1\obj\Debug\netcoreapp2.1\Coun.pdb
 D:\desk\count1\obj\Debug\netcoreapp2.1\Coun.csproj.CopyComplete
+=======
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Target.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Services.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Responsibility.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Harbur.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\AboutIsland.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\AirportEn.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\BussinesEn.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\CafeyEn.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\GovermentAuthorities.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\GuestHouseEn.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\HarbourEn.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\SpecialLocEn.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Council\Ajenda.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Council\Approved.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Council\NewsPress.g.cshtml.cs
+>>>>>>> ad0bd2a220640528965a7fa32c6f4415ec83b570

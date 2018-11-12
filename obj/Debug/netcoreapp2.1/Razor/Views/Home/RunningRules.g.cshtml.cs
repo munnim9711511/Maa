@@ -62,7 +62,11 @@ using Coun.Models;
             WriteLiteral("                <li>\r\n                    ");
             EndContext();
             BeginContext(243, 42, false);
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "867dc8cb30274c15a63c38847f221c07", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "68cfeaa387224ca498da5a4b75456a4e", async() => {
+>>>>>>> ad0bd2a220640528965a7fa32c6f4415ec83b570
                 BeginContext(276, 5, true);
                 WriteLiteral("Link ");
                 EndContext();
