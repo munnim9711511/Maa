@@ -37,8 +37,8 @@ namespace Coun.Controllers {
         }
 
         [HttpGet]
-        public IActionResult Users(){
-            return View();
+        public IActionResult Users () {
+            return View ();
         }
 
         [HttpPost]
@@ -55,9 +55,7 @@ namespace Coun.Controllers {
 
             return View ("Gallery");
         }
-    
 
-        
         [HttpPost]
         public IActionResult News (NewsModel NewsM, IFormFile NewsPic) {
             if (NewsPic != null) {
@@ -120,6 +118,11 @@ namespace Coun.Controllers {
             return View ();
         }
         public IActionResult UpdateLink () {
+            return View ();
+        }
+
+        [HttpGet]
+        public IActionResult CouncilInfo () {
             return View ();
         }
 

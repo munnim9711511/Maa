@@ -19,6 +19,7 @@ namespace Coun.Controllers {
             ViewBag.anouncements = _db.anouncementsModels.ToArray ().Take (6);
             ViewBag.news = _db.NewsModels.ToArray<NewsModel> ().Take<NewsModel> (6);
             ViewBag.slider = _db.SliderModels.ToArray ().Take (4);
+            ViewBag.advertise = _db.LinkModels.Where(x=>x.Catogary == "advertisement").ToArray().Take(4);
             return View (ViewBag);
         }
 
