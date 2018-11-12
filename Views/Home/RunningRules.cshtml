@@ -1,12 +1,15 @@
 <div class="card">
 <div class="container">
+    <br>
+    <h5 class="dh right-align">ހިންގާ ޤަވައިދު</h5>
+        <hr>
     <div class="row">
         <div class="col m4 s12">
             <ul>
                     @foreach (var item in  ViewBag.runningRules)
             {
                 <li>
-                    <a href="~/LinkPic/@item.ImgUrl">Link </a>
+                    <a href="~/LinkPic/@item.ImgUrl" width="700px" height="300px">Link </a>
                 </li>
             }
             </ul>
