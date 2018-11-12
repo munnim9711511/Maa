@@ -11583,11 +11583,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\desk\\count1\\Coun.csproj",
+      "projectUniqueName": "D:\\desk\\count1\\Coun.csproj",
       "projectName": "Coun",
-      "projectPath": "d:\\desk\\count1\\Coun.csproj",
+      "projectPath": "D:\\desk\\count1\\Coun.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "d:\\desk\\count1\\obj\\",
+      "outputPath": "D:\\desk\\count1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -11648,13 +11648,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file d:\\desk\\count1\\obj\\Coun.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

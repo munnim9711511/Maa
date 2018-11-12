@@ -350,3 +350,18 @@ C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Council\Ajenda.g.cshtml
 C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Council\Approved.g.cshtml.cs
 C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Council\NewsPress.g.cshtml.cs
 >>>>>>> ad0bd2a220640528965a7fa32c6f4415ec83b570
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\Council\Ajenda.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\Council\Approved.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\Council\NewsPress.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\AboutIsland.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\AirportEn.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\BussinesEn.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\CafeyEn.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\GovermentAuthorities.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\GuestHouseEn.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\HarbourEn.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\EngPage\SpecialLocEn.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Harbur.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Responsibility.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Services.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Target.g.cshtml.cs

@@ -62,11 +62,7 @@ using Coun.Models;
             WriteLiteral("\r\n<h5>\r\n    Upload Doc\r\n</h5>\r\n<hr>\r\n");
             EndContext();
             BeginContext(94, 134, false);
-<<<<<<< HEAD
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b0d699fc0f844fe5b39308579955ec2c", async() => {
-=======
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3bc9276de4784fababfb587fc9f0ccbf", async() => {
->>>>>>> ad0bd2a220640528965a7fa32c6f4415ec83b570
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "877c458547084d19aceb32945bd07ed1", async() => {
                 BeginContext(124, 97, true);
                 WriteLiteral("\r\n    <div class=\"row\">\r\n        <div class=\"col m4 input-field\">\r\n\r\n        </div>\r\n    </div>\r\n");
                 EndContext();
