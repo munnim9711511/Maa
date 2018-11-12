@@ -1,0 +1,16 @@
+<div class="container">
+    <h5 class="dh right-align">މާމިގިލީ ބައިނަލް އަޤްވާމީ ބަނދަރު</h5>
+    <hr>
+    <div class="row">
+        <div class="col s12 center-align">
+                    @foreach (var item in ViewBag.harbour)
+        {
+            <img src="~/LinkPic/@item.ImgUrl" class="center" >
+            <p class="dh right-align" style="direction: rtl;">
+@item.Text
+            </p>
+        }
+        </div>
+
+    </div>
+</div>

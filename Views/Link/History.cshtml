@@ -5,14 +5,22 @@
 
 <hr>
         <div class="row">
-        @foreach (var item in  ViewBag.history)
+            <div class="col s12 center-align">
+                     @foreach (var item in  ViewBag.history)
         {
             <h6 class=" dh right-align">
                 @item.Title
             </h6>
             <img src="~/LinkPic/@item.ImgUrl" class="center-align"/>
+            <p class="dh right-align" style="direction: rtl;text-align: justify;">
+                @item.Text
+            </p>
+            <br>
+            <hr>
            
         }
+            </div>
+   
         </div>
 
 </div>

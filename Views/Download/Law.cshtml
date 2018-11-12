@@ -1,0 +1,27 @@
+<div class="card">
+<div class="container">
+    <br>
+    <h5 class="dh right-align">ޤަވައިދު</h5>
+    <hr>
+    <div class="row  ">
+        <div class="col m4 s12 right">
+            <ul class=" ">
+                   @foreach (var item in  ViewBag.rules)
+            {
+                <li class="dh" style="font-family: Faruma;direction: rtl;">
+                    <a href="~/LinkPic/@item.ImgUrl"><img src="~/images/icon/red-circle-with-pdf-icon-png-20.png" style="width: 25px;">
+                    
+                       @item.Title (
+                    <span>@item.Text</span>
+                    )
+                    </a>
+                </li>
+                
+            }
+            </ul>
+         
+        </div>
+    </div>
+
+</div>
+</div>

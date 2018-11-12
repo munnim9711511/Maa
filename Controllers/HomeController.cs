@@ -47,6 +47,11 @@ namespace Coun.Controllers {
             ViewBag.responsibility = _db.LinkModels.Where (x => x.Catogary == "responsibility").ToArray ();
             return View (ViewBag);
         }
+          [HttpGet]
+        public IActionResult Harbur (int id) {
+            ViewBag.harbour = _db.LinkModels.Where (x => x.Catogary == "harbour").ToArray ();
+            return View (ViewBag);
+        }
 
         [HttpGet]
 
