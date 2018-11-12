@@ -11583,11 +11583,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Admin\\Desktop\\count1\\Coun.csproj",
+      "projectUniqueName": "D:\\desk\\count1\\Coun.csproj",
       "projectName": "Coun",
-      "projectPath": "c:\\Users\\Admin\\Desktop\\count1\\Coun.csproj",
+      "projectPath": "D:\\desk\\count1\\Coun.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Admin\\Desktop\\count1\\obj\\",
+      "outputPath": "D:\\desk\\count1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
