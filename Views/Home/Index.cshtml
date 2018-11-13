@@ -20,13 +20,16 @@
                
                    <div class="card-content">
              <h5 class="dh center-align" style="font-size: 20px;" ><strong>    ގެލަރީ   </strong></h5><hr>
-        <div class=" row container">
+        <div class="">
+            <div class="carousel carousel-slider center">
         @foreach (var item in ViewBag.gallery)
           {
-              <img src="~/gallery/@item.ImgUrl" style="width: 90px;">    
+              <div class="carousel-item">
+              <img src="~/gallery/@item.ImgUrl" height="200px" width="280px">    
+              </div>
              }
+             </div>
         </div>
-        
              </div>
              
                  <div class="card-content">
@@ -81,3 +84,23 @@
  
  </div>
     
+
+    <script>
+    
+    var instance = M.Carousel.init({
+    fullWidth: true,
+    indicators: true
+  });
+
+  // Or with jQuery
+
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+
+//materialboxed
+
+
+
+</script>

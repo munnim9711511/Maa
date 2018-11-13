@@ -5,16 +5,40 @@
     <hr>
     <div class="row">
         <div class="col s12">
-           
+           <div class="carousel carousel-slider center"> 
             @foreach (var item in  ViewBag.videoGallery)
             {
-                 
+                 <div class="carousel-item">
                  <video class="responsive-video" controls style="width: 30%;" width="700px" height="300px">
-    <source src="~/gallery/@item.ImgUrl" type="video/mp4" >
-  </video>
+                      <source src="~/gallery/@item.ImgUrl" type="video/mp4" >
+                 </video>
+                 </div>
+
             }
+            </div>
         </div>
     </div>
 </div>
 </div>
 </div>
+
+
+<script>
+    
+    var instance = M.Carousel.init({
+    fullWidth: true,
+    indicators: true
+  });
+
+  // Or with jQuery
+
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+
+//materialboxed
+
+
+
+</script>

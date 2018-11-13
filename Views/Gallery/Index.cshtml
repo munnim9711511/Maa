@@ -5,13 +5,34 @@
     <h5 class="dh right-align" >ގެލަރީ</h5>
     <hr>
     <div class="col s12">
+        <div class="carousel carousel-slider center">   
         @foreach (var item in  ViewBag.Images)
-        {
-            <img src="~/gallery/@item.ImgUrl" style="width: 25%;" data-caption="@item.Text" class="materialboxed ">
-
-        }
+        {   
+            
+            <div class="carousel-item">
+            <img src="~/gallery/@item.ImgUrl" data-caption="@item.Text" height="500px" width="300px">
+            </div>
+        }  
+                    </div>
     </div>
 </div>
 <br>
 </div>
 </div>
+
+<script>
+    
+  
+    var instance = M.Carousel.init({
+    fullWidth: true,
+    indicators: true
+  });
+
+  // Or with jQuery
+
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+        
+</script>
