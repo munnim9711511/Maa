@@ -367,3 +367,4 @@ D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Services.g.cshtml.cs
 D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Target.g.cshtml.cs
 >>>>>>> 64839e1a6a7e9ebb6ecffd62e052eb7e17447ef1
 C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\CouncilInfo.g.cshtml.cs
+C:\New folder\count1\obj\Debug\netcoreapp2.1\Razor\Views\Home\AdminProcess.g.cshtml.cs
