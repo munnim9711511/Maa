@@ -13,13 +13,15 @@ namespace Coun.Data {
         public DbSet<LinkModel> LinkModels { get; set; }
         DbSet<BussinesModel> BussinesModels { get; set; }
         public DbSet<GalleryModel> GalleryModels { get; set; }
-       public  DbSet<CafeyModel> CafeyModels { get; set; }
+        public DbSet<CafeyModel> CafeyModels { get; set; }
         DbSet<HistoryLocationModel> HistoryLocationModels { get; set; }
         public DbSet<SliderModel> SliderModels { get; set; }
         DbSet<FormsModel> FormsModels { get; set; }
         public DbSet<NewsModel> NewsModels { get; set; }
 
         public DbSet<AnouncementsModel> anouncementsModels { get; set; }
+
+        public DbSet<CouncilModel> CouncilModels { get; set; }
 
     }
 }

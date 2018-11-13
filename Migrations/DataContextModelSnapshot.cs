@@ -65,6 +65,30 @@ namespace Coun.Migrations
                     b.ToTable("CafeyModels");
                 });
 
+            modelBuilder.Entity("coouncil.Models.CouncilModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("FirstName");
+
+                    b.Property<string>("FirstPic");
+
+                    b.Property<string>("SecondName");
+
+                    b.Property<string>("SecondPic");
+
+                    b.Property<string>("TheirdName");
+
+                    b.Property<string>("TheirdPic");
+
+                    b.Property<string>("Title");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CouncilModels");
+                });
+
             modelBuilder.Entity("coouncil.Models.FormsModel", b =>
                 {
                     b.Property<int>("Id")

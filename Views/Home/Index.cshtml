@@ -31,6 +31,12 @@
              
                  <div class="card-content">
         <h5 class="dh center-align" style="font-size: 20px;" ><strong>    އިސްތިހާރު   </strong></h5><hr>
+              <div class="container">
+        @foreach (var item in ViewBag.advertise)
+          {
+              <img src="~/LinkPic/@item.ImgUrl" style="width: 80px;">    
+             }
+        </div>
                  </div>
               
         </div>
