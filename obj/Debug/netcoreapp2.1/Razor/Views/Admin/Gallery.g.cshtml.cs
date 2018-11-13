@@ -67,7 +67,7 @@ using Coun.Models;
             WriteLiteral("\r\n<h5>Gallery</h5>\r\n<hr>\r\n");
             EndContext();
             BeginContext(83, 889, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c310b8b90504f70b16cebb4b0e790f6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9cca985e28b0432dbe9c05f89f8bfc9c", async() => {
                 BeginContext(143, 294, true);
                 WriteLiteral(@"
     <div class=""row"">
@@ -84,7 +84,7 @@ using Coun.Models;
       ");
                 EndContext();
                 BeginContext(437, 62, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "57bd793c1af9441e9868441bb1f64d88", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5246e03261324816b2305db1f1b8a174", async() => {
                     BeginContext(472, 18, true);
                     WriteLiteral("Choose your option");
                     EndContext();
@@ -112,7 +112,7 @@ using Coun.Models;
                 WriteLiteral("\r\n      ");
                 EndContext();
                 BeginContext(507, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cdd4487b68a34852ae4985046a1efc02", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f9c4d2eec044f33a56d038b61ce19fd", async() => {
                     BeginContext(529, 5, true);
                     WriteLiteral("photo");
                     EndContext();
@@ -134,7 +134,7 @@ using Coun.Models;
                 WriteLiteral("\r\n      ");
                 EndContext();
                 BeginContext(551, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1f183ae235e42f5979f51412da3f6f6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f3b7a0f2d8c94026ae815b617dd7bacf", async() => {
                     BeginContext(573, 5, true);
                     WriteLiteral("video");
                     EndContext();
