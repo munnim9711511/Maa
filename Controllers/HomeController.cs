@@ -19,6 +19,7 @@ namespace Coun.Controllers {
             ViewBag.anouncements = _db.anouncementsModels.ToArray ().Take (6);
             ViewBag.news = _db.NewsModels.ToArray<NewsModel> ().Take<NewsModel> (6);
             ViewBag.slider = _db.SliderModels.ToArray ().Take (4);
+            ViewBag.advertise = _db.LinkModels.Where (x => x.Catogary == "advertisement").ToArray ().Take (4);
             return View (ViewBag);
         }
 
@@ -31,8 +32,8 @@ namespace Coun.Controllers {
 
         [HttpGet]
         public IActionResult Project (string id) {
-            ViewBag.project = _db.LinkModels.Where(x=>x.Catogary == id).ToArray();
-            return View ( ViewBag.project);
+            ViewBag.project = _db.LinkModels.Where (x => x.Catogary == id).ToArray ();
+            return View (ViewBag.project);
         }
 
         [HttpGet]
@@ -43,12 +44,13 @@ namespace Coun.Controllers {
         }
 
         [HttpGet]
-        public IActionResult Responsibility (int id) {
-            ViewBag.responsibility = _db.LinkModels.Where (x => x.Catogary == "responsibility").ToArray ();
+        public IActionResult Responsibility () {
+            ViewBag.responsibility = _db.LinkModels.Where (x => x.Catogary == "res").ToArray ();
             return View (ViewBag);
         }
-          [HttpGet]
-        public IActionResult Harbur (int id) {
+
+        [HttpGet]
+        public IActionResult Harbur () {
             ViewBag.harbour = _db.LinkModels.Where (x => x.Catogary == "harbour").ToArray ();
             return View (ViewBag);
         }
@@ -87,6 +89,12 @@ namespace Coun.Controllers {
         }
 
         [HttpGet]
+        public IActionResult AdminProcess () {
+            ViewBag.admin = _db.LinkModels.Where (x => x.Catogary == "Idhare").ToArray ();
+            return View (ViewBag);
+        }
+
+        [HttpGet]
         public IActionResult RunningRules (string id) {
             ViewBag.runningRules = _db.LinkModels.Where (x => x.Catogary == id).ToArray ();
             return View (ViewBag);
@@ -106,15 +114,15 @@ namespace Coun.Controllers {
         public IActionResult Privacy () {
             return View ();
         }
-        public IActionResult Target(){
-            ViewBag.mission = _db.LinkModels.Where(x=>x.Catogary == "mission").ToArray();
-            ViewBag.Vission = _db.LinkModels.Where(x=>x.Catogary == "vission").ToArray();
-            return View(ViewBag);
+        public IActionResult Target () {
+            ViewBag.mission = _db.LinkModels.Where (x => x.Catogary == "mission").ToArray ();
+            ViewBag.Vission = _db.LinkModels.Where (x => x.Catogary == "vission").ToArray ();
+            return View (ViewBag);
         }
 
-        public IActionResult Services(){
-            ViewBag.services = _db.LinkModels.Where(x=>x.Catogary =="services").ToArray();
-            return View(ViewBag);
+        public IActionResult Services () {
+            ViewBag.services = _db.LinkModels.Where (x => x.Catogary == "services").ToArray ();
+            return View (ViewBag);
         }
 
         [ResponseCache (Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
