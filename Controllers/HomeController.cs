@@ -94,11 +94,11 @@ namespace Coun.Controllers {
             return View (ViewBag);
         }
 
-        [HttpGet]
-        public IActionResult AdminProcess () {
-            ViewBag.admin = _db.LinkModels.Where (x => x.Catogary == "Idhare").ToArray ();
-            return View (ViewBag);
-        }
+        // [HttpGet]
+        // public IActionResult AdminProcess () {
+        //     ViewBag.admin = _db.LinkModels.Where (x => x.Catogary == "Idhare").ToArray ();
+        //     return View (ViewBag);
+        // }
 
         [HttpGet]
         public IActionResult RunningRules (string id) {
