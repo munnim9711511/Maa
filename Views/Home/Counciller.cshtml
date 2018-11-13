@@ -6,38 +6,31 @@
     <hr>
 <div class="row center-align">
 
-    <!-- @foreach (var item in ViewBag.conciller)
-    {
-           <div class = "col s12">
-               <h6 class="dh right-align">@item.Title</h6>
-        <img src="~/LinkPic/@item.ImgUrl" class="center" width="700px" height="300px">
-        <p class="dh right-align">  
-            @item.Text
-        </p>
-    </div>
-    } -->
 
+@foreach (var item in ViewBag.conciller)
+{
+  
     <div class="wow fadeIn">
-      <h2 class="h1 h1-responsive text-center my-5">1st Commitee</h2>
+      <h2 class="h1 h1-responsive text-center my-5">@item.Title</h2>
     </div>
     <div class="row">
     <div class="center-align">
       <div class="col-lg-6 col-md-12 mb-5 wow fadeInLeft" data-wow-delay=".3s">
-        <div class="col-md-6 float-left"><img class="img-fluid rounded z-depth-1 mb-3" src="~/images/athey.jpg" alt="team member" height="180px" width="180px"/></div>
+        <div class="col-md-6 float-left"><img class="img-fluid rounded z-depth-1 mb-3" src="~/council/@item.FirstPic" alt="team member" height="180px" width="180px"/></div>
         <div class="col-md-6 float-right">
-          <div class="h4">Marie Crawford</div>
-          <h6 class="h6 blue-grey-text mb-3">Lead Designer</h6>
+          <div class="h4 dh"> @item.FirstName</div>
+          <h6 class="h6 blue-grey-text mb-3 dh " style="direction: rtl;">ކައުންސިލްގެ ރައީސް </h6>
         </div>
       </div>
-      </div>
-
-<div class="row">
+      </div>  
+      <div class="row">
         <div class="center-align">
       <div class="col s12 m6" data-wow-delay=".3s">
-        <div ><img class="img-fluid rounded z-depth-1 mb-3" src="~/images/athey.jpg" alt="team member" height="180px" width="180px"/></div>
+        
+        <div ><img class="img-fluid rounded z-depth-1 mb-3" src="~/council/@item.TheirdPic" alt="team member" height="180px" width="180px"/></div>
         <div >
-          <div class="h4">Marie Crawford</div>
-          <h6 class="h6 blue-grey-text mb-3">Lead Designer</h6>
+          <div class="h4">@item.TheirdName</div>
+          <h6 class="h6 blue-grey-text mb-3">ކައުންސިލަރ </h6>
           
         </div>
       </div>
@@ -45,10 +38,11 @@
 
       <div class="center-align">
       <div class="col s12 m6" data-wow-delay=".3s">
-        <div ><img class="img-fluid rounded z-depth-1 mb-3" src="~/images/athey.jpg" alt="team member" height="180px" width="180px"/></div>
+        <div ><img class="img-fluid rounded z-depth-1 mb-3" src="~/council/@item.SecondPic" alt="team member" height="180px" width="180px"/></div>
         <div >
-          <div class="h4">Marie Crawford</div>
-          <h6 class="h6 blue-grey-text mb-3">Lead Designer</h6>
+          <div class="h4">@item.SecondName</div>
+          
+          <h6 class="h6 blue-grey-text mb-3 dh" style="direction: rtl;">ކައުންސިލްގެ ނައިބް ރައީސް  </h6>
           
         </div>
       </div>
@@ -57,6 +51,9 @@
   </div>
  
 </div>
+}
+
+
 </div>
 </div>
 

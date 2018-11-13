@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using coouncil.Models;
 using Coun.Data;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -124,6 +125,28 @@ namespace Coun.Controllers {
         [HttpGet]
         public IActionResult CouncilInfo () {
             return View ();
+        }
+
+        [HttpPost]
+        public IActionResult CouncilInfo (CouncilModel Cmodel, List<IFormFile> pic) {
+
+            if (pic != null) {
+                var fileName = Path.Combine (he.WebRootPath + "/council", Path.GetFileName (pic[0].FileName));
+                pic[0].CopyTo (new FileStream (fileName, FileMode.Create));
+                Cmodel.FirstPic = Path.GetFileName (pic[0].FileName);
+                fileName = Path.Combine (he.WebRootPath + "/council", Path.GetFileName (pic[1].FileName));
+                pic[1].CopyTo (new FileStream (fileName, FileMode.Create));
+                Cmodel.SecondPic = Path.GetFileName (pic[1].FileName);
+                fileName = Path.Combine (he.WebRootPath + "/council", Path.GetFileName (pic[2].FileName));
+                pic[2].CopyTo (new FileStream (fileName, FileMode.Create));
+                Cmodel.TheirdPic = Path.GetFileName (pic[2].FileName);
+
+                _db.CouncilModels.Add (Cmodel);
+                _db.SaveChanges ();
+
+            }
+            return View ("CouncilInfo");
+
         }
 
         [HttpPost]

@@ -26,6 +26,8 @@ namespace Coun.Controllers {
             ViewBag.Ajenda = _db.LinkModels.Where (x => x.Catogary == "meeting agenda").ToArray ();
             return View (ViewBag);
         }
+        
+      
 
     }
 
