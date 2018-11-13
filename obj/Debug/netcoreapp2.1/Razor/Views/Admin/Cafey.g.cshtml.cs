@@ -63,7 +63,11 @@ using Coun.Models;
             WriteLiteral("\r\n<h5>\r\n    Cafey & Restaurent Data\r\n</h5>\r\n<hr>\r\n");
             EndContext();
             BeginContext(107, 828, false);
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b6a88350e17f49a8919d0ca02b24f453", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc215739057f432d9199b1ee7c1bc31d", async() => {
+>>>>>>> 5aba2f3c188f3aabebb2cd3b211889e6e84d8571
                 BeginContext(167, 761, true);
                 WriteLiteral(@"
     <div class=""row"">
