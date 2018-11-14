@@ -11,8 +11,4 @@ body{
     background-color: #98FB98;
 }
 
-@font-face {
-    font-family: 'faseyha';
-    src: url('faseyha.otf');
-    src: local('SF faseyha Bold'), local('faseyha Bold'), url('faseyha.otf') format('truetype');
-    }
+@font-face{font-family:faseyha;src:url(/fonts/faseyha.otf)}

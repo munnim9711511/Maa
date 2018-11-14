@@ -9134,3 +9134,5 @@ input[type=range]::-ms-thumb {
   font-family: 'faseyha';
   src: url('~/font/faseyha.otf');
   }
+
+  @font-face{font-family:faseyha;src:url(/fonts/faseyha.otf)}
