@@ -8,6 +8,11 @@ body{
 .dropdown-menu { min-width: 500px }
 
 .background {
-    background-color: antiquewhite;
+    background-color: #98FB98;
 }
 
+@font-face {
+    font-family: 'faseyha';
+    src: url('faseyha.otf');
+    src: local('SF faseyha Bold'), local('faseyha Bold'), url('faseyha.otf') format('truetype');
+    }
