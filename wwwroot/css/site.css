@@ -11,4 +11,4 @@ body{
     background-color: #98FB98;
 }
 
-@font-face{font-family:Faruma;src:url(../fonts/Faruma.otf)}
+@font-face{font-family:Faruma;src:url("Faruma.otf")}
