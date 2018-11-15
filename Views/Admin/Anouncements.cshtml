@@ -11,19 +11,19 @@
 <form action="" method="POST" enctype="multipart/form-data">
 <div class="row">
 <div class="col m4 input-field">
-    <input type="text" style="font-family: Faruma;direction: rtl" name="Title"/>
+    <input type="text" style="font-family: Faruma;direction: rtl" name="Title" required/>
 <label>Title</label>
 </div>
 </div>
 <div class="row">
 <div class="col m4 ">
 <label>document</label>
-<input type="file" name="Doc"/>
+<input type="file" name="Doc" required/>
 </div>
 </div>
 <div class="row">
     <div class="col m4 input-field">
-        <select name="Catogary">
+        <select name="Catogary" required>
             <option value="public">public</option>
             <option value="organization">organization</option>
             <option value="council">council</option>

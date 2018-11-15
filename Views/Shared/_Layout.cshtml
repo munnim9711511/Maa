@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - coouncil</title>
+    <title>@ViewData["Title"] </title>
+    <link rel="icon" href="~/images/icon/250px-Emblem_of_Maldives.svg.png">
     <link rel="stylesheet" href="~/css/site.css">
 @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>*@
     <script src="~/js/jquery-3.3.1.min.js"></script>
@@ -97,7 +98,7 @@
                   </a>
               </li>
 
-              <li><a href="badges.html" class="dh right-align">ޙަބަރު</a></li>
+              <li><a href="@Url.Action("News","Home")" class="dh right-align">ޙަބަރު</a></li>
               <li>
                   <a class="dropdown-trigger dh right-align" href="#!" data-target="dropdown8">
                       <i class="material-icons left right-align">arrow_drop_down</i> ގެލެރީ
@@ -126,16 +127,16 @@
 
    
           <ul id="dropdown6" class="dropdown-content">
-          <li><a href="" class="dh right-align" >  ފޯމް</a></li>
-          <li><a href="#!" class="dh right-align">  ޤަވައިދު</a></li>
-          <li><a href="#!" class="dh right-align">    އުސޫލު</a></li>
-          <li><a href="#!" class="dh right-align">    ރިޕޯޓް</a></li>
-          <li><a href="#!" class="dh right-align">    ލިޔުންތައް</a></li>
+     <li><a href="@Url.Action("Form","Download")" class="dh right-align" >  ފޯމް</a></li>
+  <li><a href="@Url.Action("Law","Download")" class="dh right-align">  ޤަވައިދު</a></li>
+  <li><a href="@Url.Action("Ausule","Download")" class="dh right-align">    އުސޫލު</a></li>
+  <li><a href="@Url.Action("Report","Download")" class="dh right-align">    ރިޕޯޓް</a></li>
+  <li><a href="@Url.Action("Documents","Download")" class="dh right-align">    ލިޔުންތައް</a></li>
               </ul>
          <ul id="dropdown7" class="dropdown-content">
-  <li><a href="#!" class="dh right-align" >މާމިގިލީ ކައުންސިލްގެ އިޢުލާން</a></li>
-  <li><a href="#!" class="dh right-align"> މުޢައްސަސާތަކުގެ އިޢުލާން</a></li>
-  <li><a href="#!" class="dh right-align">  އަމިއްލަ ފަރާތްތަކުގެ އިސްތިހާރު</a></li>
+  <li><a href="@Url.Action("CouncilAnounce","Anounce")" class="dh right-align" >މާމިގިލީ ކައުންސިލްގެ އިޢުލާން</a></li>
+  <li><a href="@Url.Action("OrganizationAnounce","Anounce")" class="dh right-align"> މުޢައްސަސާތަކުގެ އިޢުލާން</a></li>
+  <li><a href="@Url.Action("LocalAnounce","Anounce")" class="dh right-align">  އަމިއްލަ ފަރާތްތަކުގެ އިސްތިހާރު</a></li>
       </ul>
               <ul id="dropdown8" class="dropdown-content">
   <li><a href="@Url.Action("Index","Gallery")" class="dh right-align" >ފޮޓޯ</a></li>

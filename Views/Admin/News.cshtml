@@ -10,7 +10,7 @@
 <form action="" method="post" enctype="multipart/form-data">
     <div class="row">
         <div class="col m4 s12 input-field">
-            <input type="text" style="font-family:Faruma;direction:rtl;" name="Title" />
+            <input type="text" style="font-family:Faruma;direction:rtl;" name="Title"  required/>
             <label>
                 Title
             </label>
@@ -22,14 +22,14 @@
                 Image
             </label>
             <br />
-            <input type="file" name="NewsPic" />
+            <input type="file" name="NewsPic" required />
 
         </div>
     </div>
     <div class="row">
         <div class="col m10 s12 input-field">
             <i class="material-icons prefix">mode_edit</i>
-            <textarea id="icon_prefix2" class="materialize-textarea" style="font-family:Faruma;direction:rtl" name="Text"></textarea>
+            <textarea id="icon_prefix2" class="materialize-textarea" style="font-family:Faruma;direction:rtl" name="Text" required></textarea>
             <label>
                 News
             </label>

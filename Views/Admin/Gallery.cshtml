@@ -7,7 +7,7 @@
 <form action="" method="POST" enctype="multipart/form-data">
     <div class="row">
         <div class="col m4 input-field">
-            <input type="text" name="Title">
+            <input type="text" name="Title" required>
             <label>
                 Title
             </label>
@@ -15,7 +15,7 @@
     </div>
 <div class="row">
 <div class="col m4 input-field">
-      <select name="Text">
+      <select name="Text" required>
       <option value="" disabled selected>Choose your option</option>
       <option value="photo">photo</option>
       <option value="video">video</option>
@@ -32,7 +32,7 @@
                 Item
             </label>
             <br>
-            <input type="file" name="gpic">
+            <input type="file" name="gpic" required>
          
         </div>
     </div>

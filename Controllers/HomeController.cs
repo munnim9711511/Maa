@@ -15,6 +15,7 @@ namespace Coun.Controllers {
             this._db = _db;
         }
         public IActionResult Index () {
+            ViewData["Title"] = "Home";
             ViewBag.gallery = _db.GalleryModels.Where (x => x.Text == "photo").ToArray ().Take (6);
             ViewBag.anouncements = _db.anouncementsModels.ToArray ().Take (6);
             ViewBag.news = _db.NewsModels.OrderByDescending(x=>x.Id).ToArray<NewsModel> ().Take<NewsModel> (6);
@@ -25,6 +26,7 @@ namespace Coun.Controllers {
 
         [HttpGet]
         public IActionResult Cafey () {
+            ViewData["Title"] = "Cafey";
             ViewBag.cafey = _db.CafeyModels.ToArray ();
 
             return View (ViewBag);
@@ -32,12 +34,14 @@ namespace Coun.Controllers {
 
         [HttpGet]
         public IActionResult Project (string id) {
+              ViewData["Title"] = "Project";
             ViewBag.project = _db.LinkModels.Where (x => x.Catogary == id).ToArray ();
             return View (ViewBag.project);
         }
 
         [HttpGet]
         public IActionResult News () {
+              ViewData["Title"] = "News";
             ViewBag.news = _db.NewsModels.ToArray ().OrderByDescending (x => x.Id);
 
             return View (ViewBag);
@@ -45,12 +49,14 @@ namespace Coun.Controllers {
 
         [HttpGet]
         public IActionResult Responsibility () {
+              ViewData["Title"] = "Responsibility";
             ViewBag.responsibility = _db.LinkModels.Where (x => x.Catogary == "res").ToArray ();
             return View (ViewBag);
         }
 
         [HttpGet]
         public IActionResult Harbur () {
+              ViewData["Title"] = "Harbour";
             ViewBag.harbour = _db.LinkModels.Where (x => x.Catogary == "harbour").ToArray ();
             return View (ViewBag);
         }
@@ -64,6 +70,7 @@ namespace Coun.Controllers {
         }
 
         public IActionResult EngCouncil () {
+              ViewData["Title"] = "Council";
             return View ();
         }
         public IActionResult EngRules () {
@@ -78,18 +85,21 @@ namespace Coun.Controllers {
 
         [HttpGet]
         public IActionResult MaamigiliContact () {
+              ViewData["Title"] = "Contact";
 
             return View ();
         }
 
         [HttpGet]
         public IActionResult Counciller (string id) {
+              ViewData["Title"] = "Council";
             ViewBag.conciller = _db.CouncilModels.OrderByDescending(x=>x.Id).ToArray();
             return View (ViewBag);
         }
 
         [HttpGet]
         public IActionResult AdminProcess () {
+              ViewData["Title"] = "Admin";
             ViewBag.admin = _db.LinkModels.Where (x => x.Catogary == "Idhare").ToArray ();
             return View (ViewBag);
         }
@@ -102,31 +112,37 @@ namespace Coun.Controllers {
 
         [HttpGet]
         public IActionResult RunningRules (string id) {
+              ViewData["Title"] = "Rules";
             ViewBag.runningRules = _db.LinkModels.Where (x => x.Catogary == id).ToArray ();
             return View (ViewBag);
         }
 
         [HttpGet]
         public IActionResult MeetingSummery (string id) {
+              ViewData["Title"] = "Summery";
             ViewBag.meeting = _db.LinkModels.Where (x => x.Catogary == id).ToArray ();
             return View (ViewBag);
         }
 
         public IActionResult VideoGallery () {
+              ViewData["Title"] = "Gallery";
             ViewBag.videoGallery = _db.GalleryModels.Where (x => x.Text == "video").ToArray ();
             return View (ViewBag);
         }
 
         public IActionResult Privacy () {
+              ViewData["Title"] = "Privacy";
             return View ();
         }
         public IActionResult Target () {
+              ViewData["Title"] = "Target";
             ViewBag.mission = _db.LinkModels.Where (x => x.Catogary == "mission").ToArray ();
             ViewBag.Vission = _db.LinkModels.Where (x => x.Catogary == "vission").ToArray ();
             return View (ViewBag);
         }
 
         public IActionResult Services () {
+              ViewData["Title"] = "Service";
             ViewBag.services = _db.LinkModels.Where (x => x.Catogary == "services").ToArray ();
             return View (ViewBag);
         }
