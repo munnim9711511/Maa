@@ -2381,6 +2381,11 @@ textarea {
   /* 1 */
   margin: 0;
   /* 2 */
+  overflow: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+
 }
 
 /**
@@ -2594,6 +2599,7 @@ optgroup,
 select,
 textarea {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  overflow: auto;
 }
 
 ul:not(.browser-default) {
@@ -6197,6 +6203,7 @@ textarea.materialize-textarea {
   transition: border .3s, -webkit-box-shadow .3s;
   transition: box-shadow .3s, border .3s;
   transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+  overflow: auto;
 }
 
 input:not([type]):disabled, input:not([type])[readonly="readonly"],
@@ -6716,6 +6723,7 @@ textarea {
   width: 100%;
   height: 3rem;
   background-color: transparent;
+  overflow: auto;
 }
 
 textarea.materialize-textarea {
@@ -9136,3 +9144,12 @@ input[type=range]::-ms-thumb {
   }
 
   @font-face{font-family:faseyha;src:url(/fonts/faseyha.otf)}
+
+  .text {
+    overflow:auto;
+  }
+
+  .div {
+    overflow-wrap: break-word;
+    word-wrap    : break-word;
+  }

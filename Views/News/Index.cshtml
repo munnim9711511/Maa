@@ -4,8 +4,8 @@
 @foreach (var item in ViewBag.news)
 {
     <h5 class="dh right-align">@item.Title</h5>
-    <img  src="~/newsImage/@item.ImgUrl" class="responsive-img center-align" style="width: 50%" />
-    <p class="dh" style="text-align: justify;direction: rtl">
+    <img  src="~/newsImage/@item.ImgUrl" class="center-align "  height="484px" width="750px"/>
+    <p class="dh" style="text-align: justify;direction: rtl overflow-wrap: break-word;">
         @item.Text
     </p>
 }
