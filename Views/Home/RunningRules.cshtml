@@ -4,13 +4,20 @@
     <h5 class="dh right-align">ހިންގާ ޤަވައިދު</h5>
         <hr>
     <div class="row">
-        <div class="col m4 s12">
-            <ul>
-                    @foreach (var item in  ViewBag.runningRules)
+        <div class="col m4 s12 right">
+       
+
+           
+               <ul class=" right-align">
+                   @foreach (var item in    ViewBag.runningRules)
             {
-                <li>
-                    <a href="~/LinkPic/@item.ImgUrl" width="700px" height="300px">Link </a>
+                <li class="dh" style="font-family: Faruma;direction: rtl;">
+                    <a href="~/LinkPic/@item.ImgUrl"><img src="~/images/icon/red-circle-with-pdf-icon-png-20.png" style="width: 25px;">
+                    
+                    @item.Title
+                    </a>
                 </li>
+                
             }
             </ul>
         

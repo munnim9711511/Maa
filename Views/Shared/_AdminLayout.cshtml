@@ -28,7 +28,7 @@
 <body >
   
 
-  <ul id="slide-out" class="sidenav">
+  <ul id="slide-out" class="sidenav" style="padding: 5px;">
     <li><div class="user-view center-align">
       <div class="background" >
         <img src="~/images/icon/admin.png" class="">
@@ -41,25 +41,34 @@
     <!-- @User -->
     @if(User.IsInRole("Administrator"))
     {
-    <li><a href="@Url.Action("Users","Admin")">manage user</a></li>
+    <li><a href="@Url.Action("Users","Admin")" class="dh right-align">ލޮގްވާ މުވަޒަފުން މެނޭޖް ކުރުން</a></li>
     
 
     }
   
     <li><div class="divider"></div></li>
-    <li><a href="@Url.Action("CouncilInfo","Admin")">upload Concilers Info</a></li>
+    <li><a href="@Url.Action("CouncilInfo","Admin")" class="dh right-align">ކައުންސިލަރުންގެ މަޢުލޫމާތު </a></li>
 
-    <li><a href="@Url.Action("News","Admin")">upload news</a></li>
-     <li><a href="@Url.Action("UpdateNews","Admin")">update news</a></li>
-    <li><a href="@Url.Action("Slider","Admin")">slider</a></li>
+    <li><a href="@Url.Action("News","Admin")" class="dh right-align">ޙަބަރު ޝާއިރު ކުރުމަށް </a></li>
+     <li><a href="@Url.Action("UpdateNews","Admin")"  class="dh right-align">ޝާއިރު ކުރި ޙަބަރު އަށް އިސްލާހުގެނުމަށް</a></li>
+    <li><a href="@Url.Action("Slider","Admin")" class="dh right-align">ފޮޓޯ ސްލައިޑަރ  ފޮޓޯލުމަށް</a></li>
     <!-- <li><a href="@Url.Action("UploadDoc","Admin")">upload doc</a></li> -->
-    <li><a href="@Url.Action("UpdateLink","Admin")">update url link</a></li>
-    <li><a href="@Url.Action("Cafey","Admin")">Cafey & Restaurent</a></li>
-    <li><a href="@Url.Action("Bussiness","Admin")">Bussines</a></li>
-     <li><a href="@Url.Action("Gallery","Admin")">Gallery</a></li>
-    <li><a href="@Url.Action("Anouncements","Admin")">Anouncements</a></li>
+    <li><a href="@Url.Action("UpdateLink","Admin")" class="dh right-align">ލިންކްތަކަށް މަޢުލޫމާތު </a></li>
     
-    <li><a class="waves-effect" href="@Url.Action("Logout","Account")">Logout</a></li>
+    <h6 class="dh right-align">ކެފޭ އަދި ރެސްޓޯރަންޓް</h6>
+    <hr>
+    
+    <li><a href="@Url.Action("Cafey","Admin")" class="dh right-align">ކެފޭ އަދި ރެސްޓޯރަންޓް ތަކުގެ މަޢުލޫމާތު  </a></li>
+    <li>
+      <a  href="@Url.Action("Bussiness","Admin")" class="dh right-align">
+ވިޔަފާރި
+      </a>
+    </li>
+ 
+     <li><a href="@Url.Action("Gallery","Admin")" class="dh right-align">ގެލަރީ</a></li>
+    <li><a href="@Url.Action("Anouncements","Admin")" class="dh right-align">އެންގުންތައް</a></li>
+    
+    <li><a class="waves-effect dh right-align" href="@Url.Action("Logout","Account")" >ލޮގްއައުޓް</a></li>
   </ul>
 
   <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>

@@ -177,6 +177,8 @@ namespace Coun.Controllers {
 
         [HttpPost]
         public IActionResult UpdateNews (NewsModel newsM, IFormFile NewsPic) {
+
+        
             if (NewsPic != null) {
                 var fileName = Path.Combine (he.WebRootPath + "/newsImage", Path.GetFileName (NewsPic.FileName));
                 NewsPic.CopyTo (new FileStream (fileName, FileMode.Create));
