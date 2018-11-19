@@ -1,0 +1,47 @@
+@{
+    Layout="~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <form action="@Url.Action("UploadLinkCorrection","Admin")" method="POST" enctype="multipart/form-data">
+    @foreach (var item in ViewBag.data)
+    {
+         <div class="row">
+            <div class="col m8 input-field">
+                <input type="text" name="Title" required value="@item.Title" style="font-family: Faruma;direction: rtl;">
+                <label for="">Title</label>
+            </div>
+        </div> 
+         <div class="row">
+            <div class="col m8 input-field">
+                <input type="text" name="Catogary" required value="@item.Catogary" style="font-family: Faruma;direction: rtl;">
+                <label for="">Catogary</label>
+            </div>
+        </div> 
+          <div class="row hide">
+            <div class="col m8 input-field">
+                <input type="Id" name="Id"  required value="@item.Id" style="font-family: Faruma;direction: rtl;">
+                <label for="">Id</label>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col m8">
+                <label for="">Image</label>
+                <br>
+
+                <input type="file" name="NewsPic"  value="">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col m8 input-field">
+          <textarea id="textarea1" class="materialize-textarea dh "required  name="Text" style="direction: rtl;text-align: justify;">@item.Text</textarea>
+                <label for="">News</label>
+            </div>
+        </div>  
+
+
+    }
+      <input type="submit" value="update" class="btn">
+    </form>
+</div>

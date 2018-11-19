@@ -458,3 +458,6 @@ C:\Users\Munnim\Desktop\count1\obj\Debug\netcoreapp2.1\Coun.Views.pdb
 C:\Users\Munnim\Desktop\count1\obj\Debug\netcoreapp2.1\Coun.dll
 C:\Users\Munnim\Desktop\count1\obj\Debug\netcoreapp2.1\Coun.pdb
 C:\Users\Munnim\Desktop\count1\obj\Debug\netcoreapp2.1\Coun.csproj.CopyComplete
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\IndividualUpdate.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\UpdateLinkContetnt.g.cshtml.cs
+D:\desk\count1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\UpdatLink.g.cshtml.cs

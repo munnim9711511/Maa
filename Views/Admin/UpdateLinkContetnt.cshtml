@@ -1,0 +1,10 @@
+@{
+    Layout="~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h5>ލިންކް އަޕްޑޭޓް ކުރުން</h5>
+
+    @foreach (var item in ViewBag.Link)
+    {
+       <li><a href="@Url.Action("IndividualUpdate","Admin",new{id=@item.Id})" class="dh " style="direction: rtl;">@item.Title <span>(@item.Catogary)</span></a></li> 
+    }
