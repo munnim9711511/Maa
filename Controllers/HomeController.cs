@@ -135,9 +135,11 @@ namespace Coun.Controllers {
             return View ();
         }
         public IActionResult Target () {
-              ViewData["Title"] = "Target";
-            ViewBag.mission = _db.LinkModels.Where (x => x.Catogary == "mission").ToArray ();
-            ViewBag.Vission = _db.LinkModels.Where (x => x.Catogary == "vission").ToArray ();
+
+            ViewData["Title"] = "Target";
+            ViewBag.mission = _db.LinkModels.Where (x => x.Catogary == "vs").ToArray ();
+          
+
             return View (ViewBag);
         }
 
