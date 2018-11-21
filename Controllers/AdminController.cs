@@ -155,7 +155,9 @@ namespace Coun.Controllers
 
             if (pic != null)
             {
-                var fileName = Path.Combine(he.WebRootPath + "/council", Path.GetFileName(pic[0].FileName));
+                dynamic fileName;
+                
+                fileName = Path.Combine(he.WebRootPath + "/council", Path.GetFileName(pic[0].FileName));
                 pic[0].CopyTo(new FileStream(fileName, FileMode.Create));
                 Cmodel.FirstPic = Path.GetFileName(pic[0].FileName);
                 fileName = Path.Combine(he.WebRootPath + "/council", Path.GetFileName(pic[1].FileName));
@@ -164,6 +166,12 @@ namespace Coun.Controllers
                 fileName = Path.Combine(he.WebRootPath + "/council", Path.GetFileName(pic[2].FileName));
                 pic[2].CopyTo(new FileStream(fileName, FileMode.Create));
                 Cmodel.TheirdPic = Path.GetFileName(pic[2].FileName);
+                fileName = Path.Combine(he.WebRootPath + "/council", Path.GetFileName(pic[3].FileName));
+                pic[3].CopyTo(new FileStream(fileName, FileMode.Create));
+                Cmodel.FourthPic = Path.GetFileName(pic[3].FileName);
+                fileName = Path.Combine(he.WebRootPath + "/council", Path.GetFileName(pic[4].FileName));
+                pic[4].CopyTo(new FileStream(fileName, FileMode.Create));
+                Cmodel.FifthPic = Path.GetFileName(pic[4].FileName);
 
                 _db.CouncilModels.Add(Cmodel);
                 _db.SaveChanges();
