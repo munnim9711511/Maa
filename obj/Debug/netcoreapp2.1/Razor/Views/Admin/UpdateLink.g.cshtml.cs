@@ -99,7 +99,7 @@ using Coun.Models;
             WriteLiteral("\n\n<h5>\n    UpdateLinks\n</h5>\n<hr>\n ");
             EndContext();
             BeginContext(89, 4559, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "85b8ed23a5d24f718d9a3e9dfabb044f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "33459f7784d74d81a33ac156f2b95562", async() => {
                 BeginContext(160, 557, true);
                 WriteLiteral(@" 
      <div class=""row"">
@@ -124,7 +124,7 @@ using Coun.Models;
       ");
                 EndContext();
                 BeginContext(717, 104, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01b9e626fab64930862d6f89d206a171", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b4073600db848a1aeb048e06b522704", async() => {
                     BeginContext(792, 20, true);
                     WriteLiteral(" ލިންކް ނެންގެވުމަށް");
                     EndContext();
@@ -154,7 +154,7 @@ using Coun.Models;
                 WriteLiteral("\n      ");
                 EndContext();
                 BeginContext(828, 85, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "752c60be7d684926b46d9be29e2bac07", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "77f44b7c924443d0be54fafbfc6dd323", async() => {
                     BeginContext(886, 18, true);
                     WriteLiteral("ވިސަން އަދި މިސަން");
                     EndContext();
@@ -178,7 +178,7 @@ using Coun.Models;
                 WriteLiteral("\n       ");
                 EndContext();
                 BeginContext(921, 82, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "133927c324414b68a2d5f908f379c1d0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "428d42b8f3e14a408bbdbadc42777227", async() => {
                     BeginContext(984, 10, true);
                     WriteLiteral("އެއަރ ޕޯޓް");
                     EndContext();
@@ -202,7 +202,7 @@ using Coun.Models;
                 WriteLiteral("\n      ");
                 EndContext();
                 BeginContext(1010, 82, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "24d71ec0439e48ff8534fc56c18a21e9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3b509f25184a428bbe2216ef4590f316", async() => {
                     BeginContext(1069, 14, true);
                     WriteLiteral("މަސްޢޫލިއްޔަތު");
                     EndContext();
@@ -226,7 +226,7 @@ using Coun.Models;
                 WriteLiteral("\n      ");
                 EndContext();
                 BeginContext(1099, 97, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d46700240415406284caf3c3b95333fd", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2e9b6700dde4e56b4eb98872a81f562", async() => {
                     BeginContext(1165, 22, true);
                     WriteLiteral("ރަށާއި ބެހޭ މަޢުލޫމާތު");
                     EndContext();
@@ -250,7 +250,7 @@ using Coun.Models;
                 WriteLiteral("\n       ");
                 EndContext();
                 BeginContext(1204, 89, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "90f4dbe43e55470685ac5d7cdd72ebc5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2765fd02bde14b4f87625ea1af0ee302", async() => {
                     BeginContext(1262, 22, true);
                     WriteLiteral("ސަރުކާރުގެ އިދާރާތައް ");
                     EndContext();
@@ -274,7 +274,7 @@ using Coun.Models;
                 WriteLiteral("\n       ");
                 EndContext();
                 BeginContext(1301, 83, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b4f5fc2091274f33947831315d7a1c7d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aaf395c23be340b9b808f6ee9c9ea799", async() => {
                     BeginContext(1360, 15, true);
                     WriteLiteral("ވިލާ އެއަރޕޯޓް ");
                     EndContext();
@@ -298,7 +298,7 @@ using Coun.Models;
                 WriteLiteral("\n       ");
                 EndContext();
                 BeginContext(1392, 88, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c28ff3d65aa473f873bee877f5a7e91", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bedc39244943474a84dcc312a9ff48bd", async() => {
                     BeginContext(1455, 16, true);
                     WriteLiteral("މާމިގިލި ބަނދަރު");
                     EndContext();
@@ -322,7 +322,7 @@ using Coun.Models;
                 WriteLiteral("\n        ");
                 EndContext();
                 BeginContext(1489, 84, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f873a1dcc55f4b4c94dafb4dff49d785", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f459896b0f347ef8ebd5d4ad249f3d1", async() => {
                     BeginContext(1552, 12, true);
                     WriteLiteral("ހިދުމަތްތައް");
                     EndContext();
@@ -346,7 +346,7 @@ using Coun.Models;
                 WriteLiteral("\n        ");
                 EndContext();
                 BeginContext(1582, 123, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f89aa1dabc445d3823b4a490d2ef81c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f68be7ce6c6947ca9af582ee973dad36", async() => {
                     BeginContext(1645, 51, true);
                     WriteLiteral("މާމިގިލި  ގައި ހުތި މުހިންމު ތަންތަނުގެ މަޢުލޫމާތު ");
                     EndContext();
@@ -370,7 +370,7 @@ using Coun.Models;
                 WriteLiteral("\n        ");
                 EndContext();
                 BeginContext(1714, 82, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f20f3c118fe4449aab412688ed4d77f4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb32d46917ff417cbcc39121ea8afd89", async() => {
                     BeginContext(1772, 15, true);
                     WriteLiteral("ގެސްޓް ހައުސް  ");
                     EndContext();
@@ -394,7 +394,7 @@ using Coun.Models;
                 WriteLiteral("\n        ");
                 EndContext();
                 BeginContext(1805, 85, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "485104a0e5c74b6ab94f43ee1aa4bc2a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1485c0e8327e4ed984af733c312cb473", async() => {
                     BeginContext(1869, 12, true);
                     WriteLiteral("މަސްރޫއުތައް");
                     EndContext();
@@ -418,7 +418,7 @@ using Coun.Models;
                 WriteLiteral("\n         ");
                 EndContext();
                 BeginContext(1900, 82, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9eb4d42742e544028f4843128dcc2d86", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cfb7becf4e7f42bea0f5b0e99de19c8e", async() => {
                     BeginContext(1965, 8, true);
                     WriteLiteral("ވިޔަފާރި");
                     EndContext();
@@ -442,7 +442,7 @@ using Coun.Models;
                 WriteLiteral("\n          <!-- <option value=\"counciler\">counciler</option> -->\n             ");
                 EndContext();
                 BeginContext(2060, 87, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b9be84060aec4e0f8ec00fd7a209b975", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a52a056d3ccf4fc798d7d302fcf25a90", async() => {
                     BeginContext(2121, 17, true);
                     WriteLiteral(" ފޯމް /ޑައުންލޯޑް");
                     EndContext();
@@ -466,7 +466,7 @@ using Coun.Models;
                 WriteLiteral("\n              ");
                 EndContext();
                 BeginContext(2162, 99, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a5e120ba459340c38105098d2f379f1f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3b39ec15478a41238e6a8505cb400167", async() => {
                     BeginContext(2230, 22, true);
                     WriteLiteral(" ޤަވައިދު /ޑައުންލޯޑް ");
                     EndContext();
@@ -490,7 +490,7 @@ using Coun.Models;
                 WriteLiteral("\n              <!-- <option value=\"meetingSummery\">meeting summery (download)</option> -->\n              ");
                 EndContext();
                 BeginContext(2366, 97, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "78e1a3cfc3d044879a9da029c58c7bcd", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5e6a3f02fee7496b99ade0a2083ddf78", async() => {
                     BeginContext(2431, 23, true);
                     WriteLiteral("އުސޫލުތައް /ޑައުންލޯޑް ");
                     EndContext();
@@ -514,7 +514,7 @@ using Coun.Models;
                 WriteLiteral("\n              ");
                 EndContext();
                 BeginContext(2478, 91, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2cbb3d5ac11c406db58d63783ca8e463", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "32c0cc6a7a194cca900f5e198fee5440", async() => {
                     BeginContext(2541, 19, true);
                     WriteLiteral("ރިޕޯތް / ޑައުންލޯޑް");
                     EndContext();
@@ -538,7 +538,7 @@ using Coun.Models;
                 WriteLiteral("\n              ");
                 EndContext();
                 BeginContext(2584, 91, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "297723e816ac449493c8eb209776b400", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7af686e48b15481cb0874d5c3ed96d93", async() => {
                     BeginContext(2643, 23, true);
                     WriteLiteral("ލިޔުންތައް / ޑައުންލޯޑް");
                     EndContext();
@@ -562,7 +562,7 @@ using Coun.Models;
                 WriteLiteral("\n              <!-- <option value=\"vission\">vission</option> -->\n              ");
                 EndContext();
                 BeginContext(2754, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2a8e65fa14554d19831889306802d643", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "90422197294e4c26b901a2a0d99f8e08", async() => {
                     BeginContext(2818, 8, true);
                     WriteLiteral("ޙިދުމަތް");
                     EndContext();
@@ -586,7 +586,7 @@ using Coun.Models;
                 WriteLiteral("\n              ");
                 EndContext();
                 BeginContext(2850, 107, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2225c574a7e4ab5b070d929e059a954", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea99c595cd8a4fc0a28696611f6d4026", async() => {
                     BeginContext(2919, 29, true);
                     WriteLiteral("ރަށުގެ މަޢުލޫމާތު / އިނގިރޭސި");
                     EndContext();
@@ -610,7 +610,7 @@ using Coun.Models;
                 WriteLiteral("\n              ");
                 EndContext();
                 BeginContext(2972, 112, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e9b871a035a6442a9fe35b4ca263a327", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03eb7984de39485aaec15ea12cb2579c", async() => {
                     BeginContext(3042, 33, true);
                     WriteLiteral("ސަރުކާރުގެ އިދާރާތައް / އިނގިރޭސި");
                     EndContext();
@@ -634,7 +634,7 @@ using Coun.Models;
                 WriteLiteral("\n              ");
                 EndContext();
                 BeginContext(3099, 101, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c88ff66557842e58557bbdfb9903493", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "548fc0471c3842a7b4a08c034b83e4a6", async() => {
                     BeginContext(3164, 27, true);
                     WriteLiteral("ވިލާ އެއަރޕޯޓް / އިންގިރޭސި");
                     EndContext();
@@ -658,7 +658,7 @@ using Coun.Models;
                 WriteLiteral("\n              ");
                 EndContext();
                 BeginContext(3215, 102, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0ec3f0d5386549a18ca09cc9abfc6c34", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0ce41a4ed9bc46798a61a558a1896488", async() => {
                     BeginContext(3280, 28, true);
                     WriteLiteral("މާމިގިލި ބަނދަރު / އިނގިރޭސި");
                     EndContext();
@@ -682,7 +682,7 @@ using Coun.Models;
                 WriteLiteral("\n              ");
                 EndContext();
                 BeginContext(3332, 116, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "89a5a94f06d7409ea0cee682217eec0e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8b0b954f7c6b44d79928c9811fd07523", async() => {
                     BeginContext(3400, 39, true);
                     WriteLiteral("މާމިގިލި މުހިންމު ތަންތަން / އިންގިރޭސި");
                     EndContext();
@@ -706,7 +706,7 @@ using Coun.Models;
                 WriteLiteral("\n              ");
                 EndContext();
                 BeginContext(3463, 101, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "624af2d591904326bb21eacb22dc80f9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0a99c2b843a14dfc96f0f97dbb68194d", async() => {
                     BeginContext(3527, 28, true);
                     WriteLiteral("ގެސްޓް ހައުސް / އިންގިރޭސި  ");
                     EndContext();
@@ -730,7 +730,7 @@ using Coun.Models;
                 WriteLiteral("\n              ");
                 EndContext();
                 BeginContext(3579, 196, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "774ca55f3646407eb4101d617b5fa24e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "38215101fbbe47e8a0adb2e992ca4c9e", async() => {
                     BeginContext(3745, 21, true);
                     WriteLiteral("ވިޔަފާރި / އިންގިރޭސި");
                     EndContext();
@@ -759,7 +759,7 @@ using Coun.Models;
                 WriteLiteral("\n               \n              ");
                 EndContext();
                 BeginContext(3806, 59, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d32927f935244d9b9228139090502881", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aba35df49b494e3c9b4c5289b3ff11aa", async() => {
                     BeginContext(3844, 12, true);
                     WriteLiteral("ނޫސް ބަޔާން ");
                     EndContext();
@@ -782,7 +782,7 @@ using Coun.Models;
                 WriteLiteral("\n              ");
                 EndContext();
                 BeginContext(3880, 64, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea687f50dc2a4b37827e2795a7278ade", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3f3b29a59d0f40f1a3d74c917fc2d6c6", async() => {
                     BeginContext(3925, 10, true);
                     WriteLiteral(" ނިންމުން ");
                     EndContext();
@@ -805,7 +805,7 @@ using Coun.Models;
                 WriteLiteral("\n              ");
                 EndContext();
                 BeginContext(3959, 60, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c489af55f824979b5545129ff58d5f3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fbe6c44f344a4853a9baee9fa1304ba6", async() => {
                     BeginContext(4001, 9, true);
                     WriteLiteral(" އެޖެންޑާ");
                     EndContext();
@@ -828,7 +828,7 @@ using Coun.Models;
                 WriteLiteral("\n              ");
                 EndContext();
                 BeginContext(4034, 61, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5425bfa9c3004bbfbe6461476c3ad6c8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4604d4e1f67c4adab268db2e72177766", async() => {
                     BeginContext(4076, 10, true);
                     WriteLiteral("އިސްތިހާރު");
                     EndContext();
@@ -851,7 +851,7 @@ using Coun.Models;
                 WriteLiteral("\n              ");
                 EndContext();
                 BeginContext(4110, 62, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8f5c1ebcd2f4563bf7a43dd0ac7e831", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e42d6f92062c4a7da233f77ca85ef11d", async() => {
                     BeginContext(4144, 19, true);
                     WriteLiteral("އިދާރީ އޮންނިގަނޑު ");
                     EndContext();
