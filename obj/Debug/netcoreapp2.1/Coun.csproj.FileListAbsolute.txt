@@ -644,3 +644,4 @@ D:/desk/count1/obj/Debug/netcoreapp2.1/Razor/Views/Admin/UpdatLink.g.cshtml.cs
 /home/munnim/Desktop/count1/obj/Debug/netcoreapp2.1/Coun.dll
 /home/munnim/Desktop/count1/obj/Debug/netcoreapp2.1/Coun.pdb
 /home/munnim/Desktop/count1/obj/Debug/netcoreapp2.1/Coun.csproj.CopyComplete
+/home/munnim/Desktop/count1/obj/Debug/netcoreapp2.1/Razor/Views/Link/GuestHouseInfo.g.cshtml.cs

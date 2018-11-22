@@ -14,5 +14,11 @@ namespace coouncil.Models
 
         public string TheirdName { get; set; }
         public string TheirdPic { get; set; }
+
+        public string FourthName { get; set; }
+        public string FourthPic { get; set; }
+
+        public string FifthName { get; set; }
+        public string FifthPic { get; set; }
     }
 }

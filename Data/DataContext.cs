@@ -23,7 +23,7 @@ namespace Coun.Data {
 
         public DbSet<CouncilModel> CouncilModels { get; set; }
 
-        public DbSet<GuestHouseModel> GuestHouseModels { get; set; }
+        public DbSet<GuestHousesModel> GuestHousesModels { get; set; }
 
     }
 }

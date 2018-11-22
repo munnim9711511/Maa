@@ -132,9 +132,9 @@ namespace Coun.Controllers {
         }
 
         [HttpPost]
-        public IActionResult GuestHouseInfo (GuestHouseModel GH, List<IFormFile> pic) {
+        public IActionResult GuestHouseInfo (GuestHousesModel GH, List<IFormFile> pic) {
             if (pic != null) {
-                var fileName = Path.Combine (he.WebRootPath + "/GuestHousePic", Path.GetFileName (pic[0].FileName));
+                dynamic fileName = Path.Combine (he.WebRootPath + "/GuestHousePic", Path.GetFileName (pic[0].FileName));
                 pic[0].CopyTo (new FileStream (fileName, FileMode.Create));
                 GH.ImgUrl1 = Path.GetFileName (pic[0].FileName);
                 fileName = Path.Combine (he.WebRootPath + "/GuestHousePic", Path.GetFileName (pic[1].FileName));
@@ -142,25 +142,24 @@ namespace Coun.Controllers {
                 GH.ImgUrl2 = Path.GetFileName (pic[1].FileName);
                 fileName = Path.Combine (he.WebRootPath + "/GuestHousePic", Path.GetFileName (pic[2].FileName));
                 pic[2].CopyTo (new FileStream (fileName, FileMode.Create));
-                GH.ImgUrl3= Path.GetFileName (pic[2].FileName);
+                GH.ImgUrl3 = Path.GetFileName (pic[2].FileName);
                 fileName = Path.Combine (he.WebRootPath + "/GuestHousePic", Path.GetFileName (pic[3].FileName));
                 pic[3].CopyTo (new FileStream (fileName, FileMode.Create));
-                GH.ImgUrl3= Path.GetFileName (pic[3].FileName);
+                GH.ImgUrl4 = Path.GetFileName (pic[3].FileName);
                 fileName = Path.Combine (he.WebRootPath + "/GuestHousePic", Path.GetFileName (pic[4].FileName));
                 pic[4].CopyTo (new FileStream (fileName, FileMode.Create));
-                GH.ImgUrl3= Path.GetFileName (pic[4].FileName);
-                _db.GuestHouseModels.Add(GH);
-                _db.SaveChanges();
-
+                GH.ImgUrl5 = Path.GetFileName (pic[4].FileName);
+               _db.GuestHousesModels.Add(GH);
+               _db.SaveChanges();
             }
-            return View ("GuestHouseInfo");
+            return View("GuestHouseInfo");
         }
 
-        [HttpPost]
         public IActionResult CouncilInfo (CouncilModel Cmodel, List<IFormFile> pic) {
 
             if (pic != null) {
-                var fileName = Path.Combine (he.WebRootPath + "/council", Path.GetFileName (pic[0].FileName));
+                dynamic fileName;
+                fileName = Path.Combine (he.WebRootPath + "/council", Path.GetFileName (pic[0].FileName));
                 pic[0].CopyTo (new FileStream (fileName, FileMode.Create));
                 Cmodel.FirstPic = Path.GetFileName (pic[0].FileName);
                 fileName = Path.Combine (he.WebRootPath + "/council", Path.GetFileName (pic[1].FileName));
@@ -169,14 +168,21 @@ namespace Coun.Controllers {
                 fileName = Path.Combine (he.WebRootPath + "/council", Path.GetFileName (pic[2].FileName));
                 pic[2].CopyTo (new FileStream (fileName, FileMode.Create));
                 Cmodel.TheirdPic = Path.GetFileName (pic[2].FileName);
+                fileName = Path.Combine (he.WebRootPath + "/council", Path.GetFileName (pic[3].FileName));
+                pic[3].CopyTo (new FileStream (fileName, FileMode.Create));
+                Cmodel.FourthPic = Path.GetFileName (pic[3].FileName);
+                fileName = Path.Combine (he.WebRootPath + "/council", Path.GetFileName (pic[4].FileName));
+                pic[4].CopyTo (new FileStream (fileName, FileMode.Create));
+                Cmodel.FifthPic = Path.GetFileName (pic[4].FileName);
 
                 _db.CouncilModels.Add (Cmodel);
                 _db.SaveChanges ();
 
             }
-            return View ("CouncilInfo");
-
+            return View ("GuestHouseInfo");
         }
+
+   
 
         [HttpPost]
         public IActionResult UpdateLink (LinkModel linlM, IFormFile NewsPic) {

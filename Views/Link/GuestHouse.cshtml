@@ -5,19 +5,22 @@
             <hr>
     <br>
     <div class="row">
-         
-            @foreach (var item in  ViewBag.GH)
+        <div class="col s12 dh right-align">
+             <ul>
+                   @foreach (var item in  ViewBag.GH)
             {
-                  <div class="col s12">
-                      <h5 class=" dh right-align" style="direction: rtl;">@item.Title</h5>
-                      <img src="~/LinkPic/@item.ImgUrl" class="center-align responsive-img" height="484px" width="750px">
-                      <p class="dh right-align" style="direction: rtl; overflow-wrap: break-word;">
-                          @item.Text
-                      </p>
-                      <br>
-                      <hr>
-                     </div>
+                <li>
+                    <a href="@Url.Action("GuestHouseInfo","Link",new{id=@item.Id})">
+                        @item.Title
+                    </a>
+                    
+                </li>
+                  
             }
+         </ul>
+        </div>
+        
+         
       
     </div>
 

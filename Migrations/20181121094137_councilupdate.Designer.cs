@@ -3,14 +3,16 @@ using System;
 using Coun.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Coun.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20181121094137_councilupdate")]
+    partial class councilupdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -129,34 +131,6 @@ namespace Coun.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("GalleryModels");
-                });
-
-            modelBuilder.Entity("coouncil.Models.GuestHousesModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("ConatactNumber");
-
-                    b.Property<string>("Email");
-
-                    b.Property<string>("ImgUrl1");
-
-                    b.Property<string>("ImgUrl2");
-
-                    b.Property<string>("ImgUrl3");
-
-                    b.Property<string>("ImgUrl4");
-
-                    b.Property<string>("ImgUrl5");
-
-                    b.Property<string>("Text");
-
-                    b.Property<string>("Title");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("GuestHousesModels");
                 });
 
             modelBuilder.Entity("coouncil.Models.HistoryLocationModel", b =>

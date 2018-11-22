@@ -27,9 +27,16 @@ namespace Coun.Controllers {
 
         [HttpGet]
         public IActionResult GuestHouse () {
-            ViewBag.GH = _db.LinkModels.Where (x => x.Catogary == "GH").ToArray ();
+            ViewBag.GH = _db.GuestHousesModels.OrderByDescending (x => x.Id).ToArray ();
             return View (ViewBag);
         }
+
+        [HttpGet]
+        public IActionResult GuestHouseInfo (int id) {
+            ViewBag.GuestInfo = _db.GuestHousesModels.Where(x =>x.Id == id).ToArray();
+            return View (ViewBag);
+        }
+
         [HttpGet]
         public IActionResult Bussiness () {
             ViewBag.bussines = _db.LinkModels.Where (x => x.Catogary == "bussiness").ToArray ();
