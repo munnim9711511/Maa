@@ -149,10 +149,10 @@ namespace Coun.Controllers {
                 fileName = Path.Combine (he.WebRootPath + "/GuestHousePic", Path.GetFileName (pic[4].FileName));
                 pic[4].CopyTo (new FileStream (fileName, FileMode.Create));
                 GH.ImgUrl5 = Path.GetFileName (pic[4].FileName);
-               _db.GuestHousesModels.Add(GH);
-               _db.SaveChanges();
+                _db.GuestHousesModels.Add (GH);
+                _db.SaveChanges ();
             }
-            return View("GuestHouseInfo");
+            return View ("GuestHouseInfo");
         }
 
         public IActionResult CouncilInfo (CouncilModel Cmodel, List<IFormFile> pic) {
@@ -181,8 +181,6 @@ namespace Coun.Controllers {
             }
             return View ("GuestHouseInfo");
         }
-
-   
 
         [HttpPost]
         public IActionResult UpdateLink (LinkModel linlM, IFormFile NewsPic) {
@@ -238,6 +236,35 @@ namespace Coun.Controllers {
             return View (ViewBag);
         }
 
+        [HttpGet]
+        public IActionResult ImportantLocation () {
+            return View ();
+        }
+
+        [HttpPost]
+        public IActionResult ImportantLocation (ImportantLocationModel IM, List<IFormFile> pic) {
+            if (pic != null) {
+                dynamic fileName = Path.Combine (he.WebRootPath + "/ImportnatLoca", Path.GetFileName (pic[0].FileName));
+                pic[0].CopyTo (new FileStream (fileName, FileMode.Create));
+                IM.ImgUrl1 = Path.GetFileName (pic[0].FileName);
+                fileName = Path.Combine (he.WebRootPath + "/ImportnatLoca", Path.GetFileName (pic[1].FileName));
+                pic[1].CopyTo (new FileStream (fileName, FileMode.Create));
+                IM.ImgUrl2 = Path.GetFileName (pic[1].FileName);
+                fileName = Path.Combine (he.WebRootPath + "/ImportnatLoca", Path.GetFileName (pic[2].FileName));
+                pic[2].CopyTo (new FileStream (fileName, FileMode.Create));
+                IM.ImgUrl3 = Path.GetFileName (pic[2].FileName);
+                fileName = Path.Combine (he.WebRootPath + "/ImportnatLoca", Path.GetFileName (pic[3].FileName));
+                pic[3].CopyTo (new FileStream (fileName, FileMode.Create));
+                IM.ImgUrl4 = Path.GetFileName (pic[3].FileName);
+                fileName = Path.Combine (he.WebRootPath + "/ImportnatLoca", Path.GetFileName (pic[4].FileName));
+                pic[4].CopyTo (new FileStream (fileName, FileMode.Create));
+                IM.ImgUrl5 = Path.GetFileName (pic[4].FileName);
+                _db.ImportantLocationModels.Add (IM);
+                _db.SaveChanges ();
+            }
+            return View ("ImportantLocation");
+        }
+
         public IActionResult IndividualUpdate (int id) {
             ViewBag.data = _db.LinkModels.Where (x => x.Id == id).ToArray ();
             return View (ViewBag);
@@ -271,6 +298,26 @@ namespace Coun.Controllers {
 
             }
             return RedirectToAction ("UpdateLinkContetnt", "admin");
+        }
+
+        [HttpGet]
+        public IActionResult Calander(){
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Calander( CalenderModel cal ,IFormFile Calender){
+
+              if (Calender != null) {
+                var fileName = Path.Combine (he.WebRootPath + "/Calender", Path.GetFileName (Calender.FileName));
+                Calender.CopyTo (new FileStream (fileName, FileMode.Create));
+                cal.ImgUrl = Path.GetFileName (Calender.FileName);
+                cal.Date = DateTime.UtcNow;
+                _db.CalenderModels.Add (cal);
+                _db.SaveChanges ();
+
+            }
+            return View("Calander");
         }
 
     }

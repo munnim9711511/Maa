@@ -5,7 +5,9 @@
 
 
 $(() => {
+    $('.materialboxed').materialbox();
     $('.collapsible').collapsible();
+    $('.parallax').parallax();
     $('.slider').slider({
         height: 500
     });
@@ -16,5 +18,10 @@ $(() => {
 
     $('select').formSelect();
     $('.materialboxed').materialbox();
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true
+    });
+
+    $('.carousel').carousel();
 
 });

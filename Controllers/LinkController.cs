@@ -21,10 +21,23 @@ namespace Coun.Controllers {
 
         [HttpGet]
         public IActionResult History () {
-            ViewBag.history = _db.LinkModels.Where (x => x.Catogary == "history").ToArray ();
+            ViewBag.history = _db.ImportantLocationModels.ToArray ();
             return View (ViewBag);
         }
 
+      
+
+        [HttpGet]
+        public IActionResult HistoryInfo (int id) {
+            ViewBag.history = _db.ImportantLocationModels.Where (x => x.Id == id).ToArray ();
+            return View (ViewBag);
+        }
+
+        [HttpGet]
+        public IActionResult HistoryEng (int id) {
+            ViewBag.history = _db.ImportantLocationModels.Where (x => x.Id == id).ToArray ();
+            return View (ViewBag);
+        }
         [HttpGet]
         public IActionResult GuestHouse () {
             ViewBag.GH = _db.GuestHousesModels.OrderByDescending (x => x.Id).ToArray ();
@@ -33,7 +46,13 @@ namespace Coun.Controllers {
 
         [HttpGet]
         public IActionResult GuestHouseInfo (int id) {
-            ViewBag.GuestInfo = _db.GuestHousesModels.Where(x =>x.Id == id).ToArray();
+            ViewBag.GuestInfo = _db.GuestHousesModels.Where (x => x.Id == id).ToArray ();
+            return View (ViewBag);
+        }
+
+        [HttpGet]
+        public IActionResult GuestHouseEngInfo (int id) {
+            ViewBag.GuestInfo = _db.GuestHousesModels.Where (x => x.Id == id).ToArray ();
             return View (ViewBag);
         }
 

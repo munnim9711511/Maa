@@ -34,12 +34,12 @@ namespace Coun.Controllers {
         }
 
         public IActionResult SpecialLocEn () {
-            ViewBag.specialLocEn = _db.LinkModels.Where (x => x.Catogary == "specialLocEn").ToArray ();
+              ViewBag.history = _db.ImportantLocationModels.ToArray ();
             return View (ViewBag);
         }
 
         public IActionResult GuestHouseEn () {
-            ViewBag.ghouseEn = _db.LinkModels.Where (x => x.Catogary == "ghouseEn").ToArray ();
+            ViewBag.ghouseEn = _db.GuestHousesModels.ToArray ();
             return View (ViewBag);
         }
         public IActionResult CafeyEn () {
@@ -51,7 +51,11 @@ namespace Coun.Controllers {
             return View (ViewBag);
         }
 
-      
+        [HttpGet]
+        public IActionResult HistoryEng () {
+            ViewBag.history = _db.ImportantLocationModels.ToArray ();
+            return View (ViewBag);
+        }
 
     }
 }

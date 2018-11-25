@@ -645,3 +645,9 @@ D:/desk/count1/obj/Debug/netcoreapp2.1/Razor/Views/Admin/UpdatLink.g.cshtml.cs
 /home/munnim/Desktop/count1/obj/Debug/netcoreapp2.1/Coun.pdb
 /home/munnim/Desktop/count1/obj/Debug/netcoreapp2.1/Coun.csproj.CopyComplete
 /home/munnim/Desktop/count1/obj/Debug/netcoreapp2.1/Razor/Views/Link/GuestHouseInfo.g.cshtml.cs
+/home/munnim/Desktop/count1/obj/Debug/netcoreapp2.1/Razor/Views/Link/GuestHouseEngInfo.g.cshtml.cs
+/home/munnim/Desktop/count1/obj/Debug/netcoreapp2.1/Razor/Views/Admin/ImportantLocation.g.cshtml.cs
+/home/munnim/Desktop/count1/obj/Debug/netcoreapp2.1/Razor/Views/EngPage/HistoryEng.g.cshtml.cs
+/home/munnim/Desktop/count1/obj/Debug/netcoreapp2.1/Razor/Views/Link/HistoryEng.g.cshtml.cs
+/home/munnim/Desktop/count1/obj/Debug/netcoreapp2.1/Razor/Views/Link/HistoryInfo.g.cshtml.cs
+/home/munnim/Desktop/count1/obj/Debug/netcoreapp2.1/Razor/Views/Admin/Calander.g.cshtml.cs

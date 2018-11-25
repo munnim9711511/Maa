@@ -1,13 +1,15 @@
-<div class="card">
+<div class="container">
+
+<div class="" style="padding: 12px;">
 
 <br>
 
-    
+
 
         @foreach (var item in ViewBag.GuestInfo)
 {
 
-      <h5 class="dh center-align" style="direction: rtl;"> 
+      <h5 class="dh center-align" style="direction: rtl;">
         @item.Title
     </h5>
 
@@ -16,23 +18,23 @@
     <ul class="slides">
        <li>
         <img src="~/GuestHousePic/@item.ImgUrl1"> <!-- random image -->
-     
+
       </li>
        <li>
         <img src="~/GuestHousePic/@item.ImgUrl2"> <!-- random image -->
-     
+
       </li>
          <li>
         <img src="~/GuestHousePic/@item.ImgUrl3"> <!-- random image -->
-     
+
       </li>
              <li>
         <img src="~/GuestHousePic/@item.ImgUrl4"> <!-- random image -->
-     
+
       </li>
              <li>
         <img src="~/GuestHousePic/@item.ImgUrl5"> <!-- random image -->
-     
+
       </li>
           </ul>
   </div>
@@ -41,7 +43,7 @@
    ފޯން ނަމްބަރު :@item.ConatactNumber 960 00
 </p>
     <p class=" dh right-align" style="font-size: 19px;" >
-   @item.Email:  އީމެއިލް  
+   @item.Email:  އީމެއިލް
 </p>
 
 <p class="dh right-align" style="font-size: 19px;">
@@ -49,15 +51,16 @@
 </p>
   </div>
 
-    
+
 }
-   
-   
-  
+
+
+
 
 
 </div>
 
 <div class="container">
 
+</div>
 </div>

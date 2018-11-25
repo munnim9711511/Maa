@@ -25,5 +25,9 @@ namespace Coun.Data {
 
         public DbSet<GuestHousesModel> GuestHousesModels { get; set; }
 
+        public DbSet<ImportantLocationModel> ImportantLocationModels { get; set; }
+        public DbSet<CalenderModel> CalenderModels { get; set; }
+        public DbSet<JobModel> JobModels { get; set; }
+
     }
 }

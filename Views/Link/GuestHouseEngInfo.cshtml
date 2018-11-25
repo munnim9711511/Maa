@@ -1,0 +1,70 @@
+<div class="container">
+
+<div class=" " style="padding: 12px;">
+
+<br>
+
+
+
+        @foreach (var item in ViewBag.GuestInfo)
+{
+
+      <h5 class="dh left-align" style="direction: rtl;">
+       
+       <em>
+        @item.Title
+
+       </em>
+    </h5>
+
+
+   <div class="slider">
+    <ul class="slides">
+       <li>
+        <img src="~/GuestHousePic/@item.ImgUrl1"> <!-- random image -->
+
+      </li>
+       <li>
+        <img src="~/GuestHousePic/@item.ImgUrl2"> <!-- random image -->
+
+      </li>
+         <li>
+        <img src="~/GuestHousePic/@item.ImgUrl3"> <!-- random image -->
+
+      </li>
+             <li>
+        <img src="~/GuestHousePic/@item.ImgUrl4"> <!-- random image -->
+
+      </li>
+             <li>
+        <img src="~/GuestHousePic/@item.ImgUrl5"> <!-- random image -->
+
+      </li>
+          </ul>
+  </div>
+  <div style="padding: 15px;">
+    <p class=" dh left-align" style="font-size: 19px;">
+ phone number: 00 960 @item.ConatactNumber 
+</p>
+    <p class=" dh left-align" style="font-size: 19px;" >
+    Email : @item.Email 
+</p>
+
+<p class="dh left-align" style="font-size: 19px; text-align: justify;">
+  @item.Text
+</p>
+  </div>
+
+
+}
+
+
+
+
+
+</div>
+
+<div class="container">
+
+</div>
+</div>

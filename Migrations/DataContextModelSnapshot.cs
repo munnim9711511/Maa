@@ -65,6 +65,20 @@ namespace Coun.Migrations
                     b.ToTable("CafeyModels");
                 });
 
+            modelBuilder.Entity("coouncil.Models.CalenderModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("Date");
+
+                    b.Property<string>("ImgUrl");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CalenderModels");
+                });
+
             modelBuilder.Entity("coouncil.Models.CouncilModel", b =>
                 {
                     b.Property<int>("Id")
@@ -152,7 +166,11 @@ namespace Coun.Migrations
 
                     b.Property<string>("Text");
 
+                    b.Property<string>("TextEng");
+
                     b.Property<string>("Title");
+
+                    b.Property<string>("TitleEng");
 
                     b.HasKey("Id");
 
@@ -173,6 +191,50 @@ namespace Coun.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("HistoryLocationModels");
+                });
+
+            modelBuilder.Entity("coouncil.Models.ImportantLocationModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ImgUrl1");
+
+                    b.Property<string>("ImgUrl2");
+
+                    b.Property<string>("ImgUrl3");
+
+                    b.Property<string>("ImgUrl4");
+
+                    b.Property<string>("ImgUrl5");
+
+                    b.Property<string>("Text");
+
+                    b.Property<string>("TextEng");
+
+                    b.Property<string>("Title");
+
+                    b.Property<string>("TitleEng");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ImportantLocationModels");
+                });
+
+            modelBuilder.Entity("coouncil.Models.JobModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("DocUrl");
+
+                    b.Property<DateTime>("EndDate");
+
+                    b.Property<string>("Title");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("JobModels");
                 });
 
             modelBuilder.Entity("coouncil.Models.LinkModel", b =>

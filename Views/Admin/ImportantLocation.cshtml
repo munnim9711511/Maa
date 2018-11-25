@@ -1,0 +1,98 @@
+@{
+    Layout="~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h5 class="dh">
+  މާމިގިލީގައި ހުރި މުހިންމު ތަންތަނުގެ މަޢުލޫމާތު
+</h5>
+<form action="ImportantLocation" method="post" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col m4 s12 input-field">
+            <input type="text" style="font-family:Faruma;direction:rtl;" name="Title"  required/>
+            <label class="dh">
+                  ނަން
+            </label>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col m4 s12 input-field">
+            <input type="text" style="font-family:Faruma;direction:rtl;" name="TitleEng"  required/>
+            <label class="dh">
+                  Name
+            </label>
+        </div>
+    </div>
+   
+    <div class="row">
+        <div class="col m4 s12 ">
+            <label>
+                Image
+            </label>
+            <br />
+            <input type="file" name="pic" required />
+
+        </div>
+    </div>
+       <div class="row">
+        <div class="col m4 s12 ">
+            <label>
+                Image
+            </label>
+            <br />
+            <input type="file" name="pic" required />
+
+        </div>
+    </div>
+       <div class="row">
+        <div class="col m4 s12 ">
+            <label>
+                Image
+            </label>
+            <br />
+            <input type="file" name="pic" required />
+
+        </div>
+    </div>
+       <div class="row">
+        <div class="col m4 s12 ">
+            <label>
+                Image
+            </label>
+            <br />
+            <input type="file" name="pic" required />
+
+        </div>
+    </div>
+       <div class="row">
+        <div class="col m4 s12 ">
+            <label>
+                Image
+            </label>
+            <br />
+            <input type="file" name="pic" required />
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col m10 s12 input-field">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea id="icon_prefix2" class="materialize-textarea" style="font-family:Faruma;direction:rtl" name="Text" required></textarea>
+            <label>
+                Info
+            </label>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col m10 s12 input-field">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea id="icon_prefix2" class="materialize-textarea" style="" name="TextEng" required></textarea>
+            <label>
+                Info Eng
+            </label>
+        </div>
+    </div>
+    <div class="row">
+      <input  type="submit" value="upload" class="btn"/>
+    </div>
+</form>
