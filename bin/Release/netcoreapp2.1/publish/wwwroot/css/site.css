@@ -1,0 +1,18 @@
+﻿.dh{
+    font-family: Faruma;
+    
+}
+body{
+    margin-top: 12px;
+}
+.dropdown-menu { min-width: 500px }
+
+.background {
+    background-color: #98FB98;
+}
+
+@font-face{font-family:Faruma;src:url("Faruma.otf")}
+
+.parallax-container {
+    height: 400px;
+  }
