@@ -1,35 +1,31 @@
 @{
-    @ViewData["Title"]
+@ViewData["Title"]
 }
 
-<div class="card">
-<div class="container">
+<div class="">
+  <div class="container">
     <br>
-<div class="row">
-    <h5 class="dh right-align" >ގެލަރީ</h5>
-    <hr>
-    <div class="">
-        <div class="">   
-        @foreach (var item in  ViewBag.Images)
-        {   
-            
-          <div class="col m4 s12">
-            <img src="~/gallery/@item.ImgUrl" data-caption="@item.Text" style="width: 300px;height: 250px;padding: 5px;" class="materialboxed responsive-img">
+    <div class="row">
+      <h5 class="dh right-align">ގެލަރީ</h5>
+      <hr>
 
-          </div>
-            
-        }  
-                    </div>
+      @foreach (var item in ViewBag.Images)
+      {
+
+      <div class="col m3 s12">
+        <img src="~/gallery/@item.ImgUrl" data-caption="@item.Text" style="width: 280px;height: 250px;" class="materialboxed responsive-img">
+
+      </div>
+
+      }
+
     </div>
-</div>
-<br>
-</div>
+    <br>
+  </div>
 </div>
 
 <script>
-    
-  
-    var instance = M.Carousel.init({
+  var instance = M.Carousel.init({
     fullWidth: true,
     indicators: true
   });
@@ -40,5 +36,4 @@
     fullWidth: true,
     indicators: true
   });
-        
 </script>

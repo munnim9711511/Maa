@@ -1,5 +1,7 @@
 ﻿.dh{
     font-family: Faruma;
+
+    /* line-height: 1.5; */
     
 }
 body{
@@ -16,3 +18,50 @@ body{
 .parallax-container {
     height: 400px;
   }
+
+  a {
+    color: #139e5a;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+nav ul a {
+   
+    font-size: 16px;
+   
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 16px;
+    color: #101d1c;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
+
+
+.long {
+    display: block;
+    width: 190.266px;
+    left: 564.75px;
+    top: 0px;
+    height: 451px;
+    transform-origin: 0px 0px 0px;
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .dhsub {
+    font-family: Faruma;
+    font-size: 150%;
+    line-height: 1.5;
+}
