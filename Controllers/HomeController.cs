@@ -22,7 +22,7 @@ namespace Coun.Controllers
             try
             {
                 ViewData["Title"] = "Home";
-                ViewBag.gallery = _db.GalleryModels.Where(x => x.Text == "photo").ToArray().Take(6);
+                ViewBag.gallery = _db.GalleryModels.Where(x => x.Text == "photo").ToArray().Take(6).Skip(1);
                 // ViewBag.anouncements = _db.anouncementsModels.ToArray ().Take (6);
                 ViewBag.news = _db.NewsModels.OrderByDescending(x => x.Id).ToArray<NewsModel>().Take<NewsModel>(1);
                 ViewBag.ImportantNews = _db.NewsModels.OrderByDescending(x=>x.Id).ToArray().Take(4);
