@@ -31,7 +31,7 @@ ViewData["Title"] = "Home Page";
             @foreach (var item in ViewBag.news)
             {
             <div class="row">
-                <div class="col m8 s12"><img src="~/newsImage/@item.ImgUrl" class="responsive-img" style="width: 600px;height: 272px;"></div>
+                <div class="col m8 s12"><img src="~/newsImage/@item.ImgUrl" class="responsive-img" style="width: 600px;height: 281px;"></div>
                 <div class="col m4 s12 right-align" style="padding: 5px;"><a class="dh right-align" style="font-size: 25px;"
                     href="@Url.Action("Index", "News",new{id=@item.Id})">@item.Title</a></div>
             </div>
@@ -58,7 +58,7 @@ ViewData["Title"] = "Home Page";
                 <p class="right-align dh" style="direction: rtl;">@item.Title</p>
             </div>
             <div class="card-action">
-                <a href="@Url.Action(" Index","News",new{id=@item.Id})" class="dh " style="direction: rtl;">އިތުރަށް
+                <a  href="@Url.Action("Index", "News",new{id=@item.Id})" class="dh " style="direction: rtl;">އިތުރަށް
                     ވިދާޅުވުމަށް</a>
             </div>
         </div>
