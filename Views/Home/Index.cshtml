@@ -7,7 +7,7 @@ ViewData["Title"] = "Home Page";
     <ul class="slides">
         @if (ViewBag.slider !=null)
         {
-            @foreach (var item in ViewBag.slider)
+        @foreach (var item in ViewBag.slider)
         {
         <li>
             <a href="~/LinkPic/@item.ImgUrl"><img src="~/images/icon/red-circle-with-pdf-icon-png-20.png" style="width: 25px;">
@@ -17,9 +17,9 @@ ViewData["Title"] = "Home Page";
                 )
             </a>
         </li>
-        } 
         }
-       
+        }
+
     </ul>
 </div>
 
@@ -31,8 +31,8 @@ ViewData["Title"] = "Home Page";
             @foreach (var item in ViewBag.news)
             {
             <div class="row">
-                <div class="col m8 s12"><img src="~/newsImage/@item.ImgUrl" class="responsive-img" style="width: 600px;height: 351px;"></div>
-                <div class="col m4 s12 right-align" style="padding: 5px;"><a class="dh right-align" style="font-size: 29px;"
+                <div class="col m8 s12"><img src="~/newsImage/@item.ImgUrl" class="responsive-img" style="width: 600px;height: 272px;"></div>
+                <div class="col m4 s12 right-align" style="padding: 5px;"><a class="dh right-align" style="font-size: 25px;"
                         href="@Url.Action(" Index","News",new{id=@item.Id})">@item.Title</a></div>
             </div>
 
@@ -40,29 +40,30 @@ ViewData["Title"] = "Home Page";
         </div>
 
     </div>
-
+    <hr>
 </div>
 
 
 
 <div class="row" style="padding-right:  15px; padding-left: 15px;">
-  @foreach (var item in ViewBag.ImportantNews)
-  {
-          <div class="col m3 s6">
-      <div class="card">
-        <div class="card-image">
-          <img src="~/newsImage/@item.ImgUrl" class="responsive-img" style="width: 100%;height: 25%">
-          
+    @foreach (var item in ViewBag.ImportantNews)
+    {
+    <div class="col m3 s12">
+        <div class="card">
+            <div class="card-image">
+                <img src="~/newsImage/@item.ImgUrl" class="responsive-img" style="width: 100%;height: 25%">
+
+            </div>
+            <div class="card-content">
+                <p class="right-align dh" style="direction: rtl;">@item.Title</p>
+            </div>
+            <div class="card-action">
+                <a href="@Url.Action(" Index","News",new{id=@item.Id})" class="dh " style="direction: rtl;">އިތުރަށް
+                    ވިދާޅުވުމަށް</a>
+            </div>
         </div>
-        <div class="card-content">
-          <p class="right-align" style="direction: rtl;">@item.Title</p>
-        </div>
-        <div class="card-action">
-          <a href="@Url.Action("Index","News",new{id=@item.Id})" class="dh " style="direction: rtl;">އިތުރަށް ވިދާޅުވުމަށް</a>
-        </div>
-      </div>
     </div>
-  }
+    }
     <!-- <div class="col m6 s12 center-align">
 <h5 class="dh center-align" style="font-size: 20px;">
     ކައުންސިލަރުންގެ މަޢުލޫމާތު
