@@ -22,10 +22,10 @@ namespace Coun.Controllers
             try
             {
                 ViewData["Title"] = "Home";
-                ViewBag.gallery = _db.GalleryModels.Where(x => x.Text == "photo").ToArray().Take(6).Skip(1);
+                ViewBag.gallery = _db.GalleryModels.Where(x => x.Text == "photo").ToArray().Take(6);
                 // ViewBag.anouncements = _db.anouncementsModels.ToArray ().Take (6);
                 ViewBag.news = _db.NewsModels.OrderByDescending(x => x.Id).ToArray<NewsModel>().Take<NewsModel>(1);
-                ViewBag.ImportantNews = _db.NewsModels.OrderByDescending(x=>x.Id).ToArray().Take(4);
+                ViewBag.ImportantNews = _db.NewsModels.OrderByDescending(x=>x.Id).Skip(1).ToArray().Take(4);
                 ViewBag.guestHouse = _db.GuestHousesModels.ToArray();
                 ViewBag.advertise = _db.LinkModels.Where(x => x.Catogary == "advertisement").ToArray().Take(4);
                 ViewBag.Form = _db.LinkModels.Where(x => x.Catogary == "forms").ToArray();
