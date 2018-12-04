@@ -10,12 +10,9 @@ ViewData["Title"] = "Home Page";
         @foreach (var item in ViewBag.slider)
         {
         <li>
-            <a href="~/LinkPic/@item.ImgUrl"><img src="~/images/icon/red-circle-with-pdf-icon-png-20.png" style="width: 25px;">
+        <img src="~/slideImage/@item.ImgUrl" class="responsive-img">
 
-                @item.Title (
-                <span>@item.Text</span>
-                )
-            </a>
+         
         </li>
         }
         }
@@ -31,7 +28,7 @@ ViewData["Title"] = "Home Page";
             @foreach (var item in ViewBag.news)
             {
             <div class="row">
-                <div class="col m8 s12"><img src="~/newsImage/@item.ImgUrl" class="responsive-img" style="width: 600px;height: 281px;"></div>
+                <div class="col m8 s12"><img src="~/newsImage/@item.ImgUrl" class="responsive-img" style="width: 600px;height: 325px;"></div>
                 <div class="col m4 s12 right-align" style="padding: 5px;"><a class="dh right-align" style="font-size: 25px;"
                     href="@Url.Action("Index", "News",new{id=@item.Id})">@item.Title</a></div>
             </div>
@@ -142,17 +139,21 @@ ViewData["Title"] = "Home Page";
     <div class="col m6 s12 right pull-m2">
         <h5 class="right-align  dhsub" style="direction: rtl;">
             <i class="material-icons"> people</i>
-            މިޝަން އަދި ވިޝަން
-        </h5>
+އެންގުންތައް        
+</h5>
         <hr>
+<ul class="right-align">
+    @foreach (var item in ViewBag.anouncements)
+    {
+        <li class="dh" style="font-family: Faruma;direction: rtl;">
+            <a href="~/LinkPic/@item.DocUrl"><img src="~/images/icon/red-circle-with-pdf-icon-png-20.png" style="width: 25px;">
 
-        @foreach (var item in ViewBag.mission)
-        {
-        <h5 class="dh right-align" style="direction: rtl;">@item.Title</h5>
-        <p class="dh right-align overflow-wrap: break-word;">
-            @item.Text
-        </p>
-        }
+                @item.Title 
+            </a>
+        </li>
+    }
+</ul>
+      
     </div>
 </div>
 <div class="">

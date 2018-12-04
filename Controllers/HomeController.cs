@@ -21,9 +21,11 @@ namespace Coun.Controllers
         {
             try
             {
+                
                 ViewData["Title"] = "Home";
                 ViewBag.gallery = _db.GalleryModels.Where(x => x.Text == "photo").ToArray().Take(6);
-                // ViewBag.anouncements = _db.anouncementsModels.ToArray ().Take (6);
+                ViewBag.slider = _db.SliderModels.OrderByDescending(x=>x.Id).Take(6).ToArray();
+                ViewBag.anouncements = _db.anouncementsModels.ToArray ().Take (6);
                 ViewBag.news = _db.NewsModels.OrderByDescending(x => x.Id).ToArray<NewsModel>().Take<NewsModel>(1);
                 ViewBag.ImportantNews = _db.NewsModels.OrderByDescending(x=>x.Id).Skip(1).ToArray().Take(4);
                 ViewBag.guestHouse = _db.GuestHousesModels.ToArray();
